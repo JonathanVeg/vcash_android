@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Fri Oct 28 21:30:42 BRST 2016
+#Fri Oct 28 21:44:45 BRST 2016
 14.set=ANDROID_RESOURCE
 180.file=/home/jonathan/Desktop/vcash_android/app/build/intermediates/res/resources-debug.ap_/res/anim/abc_grow_fade_in_from_bottom.xml
 118.set=ANDROID_RESOURCE

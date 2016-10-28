@@ -7,13 +7,13 @@ buildscript {
         classpath 'io.fabric.tools:gradle:1.+'
     }
 }
+
 apply plugin: 'com.android.application'
 apply plugin: 'io.fabric'
 
 repositories {
     maven { url 'https://maven.fabric.io/public' }
 }
-
 
 android {
     compileSdkVersion 24
@@ -22,8 +22,8 @@ android {
         applicationId "altcoin.br.vcash"
         minSdkVersion 17
         targetSdkVersion 24
-        versionCode 3
-        versionName "1.02"
+        versionCode 4
+        versionName "2.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
     buildTypes {
