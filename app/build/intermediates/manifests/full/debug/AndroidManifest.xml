@@ -36,6 +36,7 @@
         <receiver android:name="altcoin.br.vcash.widget.CoinWidgetProvider" >
             <intent-filter>
                 <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+                <action android:name="android.appwidget.action.UPDATE_BUTTON" />
             </intent-filter>
 
             <meta-data

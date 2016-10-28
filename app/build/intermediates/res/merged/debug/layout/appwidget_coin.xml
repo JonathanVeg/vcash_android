@@ -14,6 +14,7 @@
     android:paddingTop="4dp">
 
     <ImageView
+        android:id="@+id/ivWidLogo"
         android:layout_width="40dp"
         android:layout_height="50dp"
         android:layout_gravity="center"

@@ -472,7 +472,7 @@ public class MainActivity extends AppCompatActivity {
             tvBittrexBaseVolume.setText(baseVolume);
             tvBittrexBid.setText(bid);
             tvBittrexAsk.setText(ask);
-            tvBittrexChanges.setText(changes + "%");
+            tvBittrexChanges.setText(String.format("%s%%", changes));
 
             if (changes == null) changes = "0";
 
@@ -560,7 +560,7 @@ public class MainActivity extends AppCompatActivity {
             tvPoloniexBaseVolume.setText(baseVolume);
             tvPoloniexBid.setText(bid);
             tvPoloniexAsk.setText(ask);
-            tvPoloniexChanges.setText(changes + "%");
+            tvPoloniexChanges.setText(String.format("%s%%", changes));
 
             if (Double.parseDouble(changes) >= 0)
                 tvPoloniexChanges.setTextColor(ContextCompat.getColor(MainActivity.this, R.color.colorChangesUp));
@@ -615,7 +615,7 @@ public class MainActivity extends AppCompatActivity {
             tvSummaryBtcPrice.setText(btcPrice);
             tvSummaryUsd24hVolume.setText(usdVolume24h);
             tvSummaryUsdMarketCap.setText(usdMarketCap);
-            tvSummary24hChanges.setText(p24hChanges);
+            tvSummary24hChanges.setText(String.format("%s%%", p24hChanges));
 
             if (Double.parseDouble(p24hChanges) >= 0)
                 tvSummary24hChanges.setTextColor(ContextCompat.getColor(MainActivity.this, R.color.colorChangesUp));

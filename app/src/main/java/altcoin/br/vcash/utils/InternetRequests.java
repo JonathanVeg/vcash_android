@@ -119,7 +119,7 @@ public class InternetRequests {
         executeGet(url, responseListener, null);
     }
 
-    private void executeGet(String url, Response.Listener responseListener, Response.ErrorListener errorListener) {
+    public void executeGet(String url, Response.Listener responseListener, Response.ErrorListener errorListener) {
         executeRequest(Request.Method.GET, url, responseListener, errorListener, params);
     }
 

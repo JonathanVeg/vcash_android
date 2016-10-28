@@ -1,8 +1,10 @@
 package altcoin.br.vcash.widget;
 
 
+import android.app.PendingIntent;
 import android.appwidget.AppWidgetManager;
 import android.appwidget.AppWidgetProvider;
+import android.content.ComponentName;
 import android.content.Context;
 import android.content.Intent;
 import android.widget.RemoteViews;
@@ -15,21 +17,41 @@ import org.json.JSONObject;
 
 import java.util.Calendar;
 
+import altcoin.br.vcash.MainActivity;
 import altcoin.br.vcash.R;
 import altcoin.br.vcash.utils.InternetRequests;
 import altcoin.br.vcash.utils.Utils;
 
 public class CoinWidgetProvider extends AppWidgetProvider {
 
+    public static String WIDGET_BUTTON = "android.appwidget.action.UPDATE_BUTTON";
+
+
     @Override
     public void onReceive(Context context, Intent intent) {
         // AppWidgetManager appWidgetManager = AppWidgetManager.getInstance(context);
+
+        if (WIDGET_BUTTON.equals(intent.getAction())) {
+            try {
+                AppWidgetManager appWidgetManager = AppWidgetManager.getInstance(context.getApplicationContext());
+
+                ComponentName thisWidget = new ComponentName(context.getApplicationContext(), CoinWidgetProvider.class);
+
+                int[] appWidgetIds = appWidgetManager.getAppWidgetIds(thisWidget);
+
+                if (appWidgetIds != null && appWidgetIds.length > 0) {
+                    onUpdate(context, appWidgetManager, appWidgetIds);
+                }
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        }
 
         super.onReceive(context, intent);
     }
 
     @Override
-    public void onUpdate(Context context, AppWidgetManager appWidgetManager, int[] appWidgetIds) {
+    public void onUpdate(final Context context, AppWidgetManager appWidgetManager, int[] appWidgetIds) {
 
         final AppWidgetManager manager = appWidgetManager;
 
@@ -55,6 +77,17 @@ public class CoinWidgetProvider extends AppWidgetProvider {
                         e.printStackTrace();
                     }
 
+                    Intent openApp = new Intent(context, MainActivity.class);
+
+                    PendingIntent pendingIntent = PendingIntent.getActivity(context, 0, openApp, 0);
+
+                    views.setOnClickPendingIntent(R.id.tvWidNameCoin, pendingIntent);
+
+                    Intent intent = new Intent(WIDGET_BUTTON);
+                    PendingIntent pendingIntentUpdate = PendingIntent.getBroadcast(context, 0, intent, PendingIntent.FLAG_UPDATE_CURRENT);
+                    views.setOnClickPendingIntent(R.id.ivWidLogo, pendingIntentUpdate);
+
+
                     manager.updateAppWidget(appWidgetId, views);
                 }
             };
@@ -64,8 +97,8 @@ public class CoinWidgetProvider extends AppWidgetProvider {
                 public void onErrorResponse(VolleyError error) {
                     try {
 
-                        views.setTextViewText(R.id.tvWidValInBtc, "Error");
-                        views.setTextViewText(R.id.tvWidValInUsd, "Error");
+                        views.setTextViewText(R.id.tvWidValInBtc, "...");
+                        views.setTextViewText(R.id.tvWidValInUsd, "...");
 
                     } catch (Exception e) {
                         e.printStackTrace();
@@ -76,7 +109,7 @@ public class CoinWidgetProvider extends AppWidgetProvider {
             };
 
             InternetRequests internetRequests = new InternetRequests();
-            internetRequests.executeGet(url, listener);
+            internetRequests.executeGet(url, listener, errorListener);
         }
 
         super.onUpdate(context, appWidgetManager, appWidgetIds);
