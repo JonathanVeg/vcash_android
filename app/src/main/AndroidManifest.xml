@@ -37,5 +37,9 @@
                 android:resource="@xml/appwidget_provider_info" />
         </receiver>
 
+        <activity
+            android:name=".CalculatorActivity"
+            android:label="@string/title_activity_calculator" />
     </application>
+
 </manifest>

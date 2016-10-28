@@ -6,6 +6,9 @@
     <color name="colorChangesUp">#359c35</color>
     <color name="colorChangesDown">#FF0000</color>
 
+    <color name="white">#FFFFFF</color>
+    <color name="silver">#e0e0e0</color>
+
     <color name="transparent_silver">#88e0e0e0</color>
     <color name="transparent_white">#DDFFFFFF</color>
 </resources>

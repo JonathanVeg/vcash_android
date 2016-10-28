@@ -93,6 +93,24 @@
     </item>
     <item
         is-multidex="false"
+        jar="/home/jonathan/Desktop/vcash_android/app/build/intermediates/exploded-aar/com.android.support/design/24.0.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.0"
+        sha1="fc29308a7a8f6d4407b34634eb48fb8b817f9b23">
+        <dex dex="/home/jonathan/Desktop/vcash_android/app/build/intermediates/pre-dexed/debug/com.android.support-design-24.0.0_ff44da8a170a396f075815ef40f1f34783bc2b61.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/jonathan/Desktop/vcash_android/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/24.0.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.0"
+        sha1="894922f67adeaaef51f077a29e315da21a3382d3">
+        <dex dex="/home/jonathan/Desktop/vcash_android/app/build/intermediates/pre-dexed/debug/com.android.support-recyclerview-v7-24.0.0_34bdbef612ffc65d53a62fe4ec41f8546a4a66ea.jar" />
+    </item>
+    <item
+        is-multidex="false"
         jar="/home/jonathan/Desktop/vcash_android/app/build/intermediates/exploded-aar/io.fabric.sdk.android/fabric/1.3.14/jars/classes.jar"
         jumboMode="false"
         optimize="true"

@@ -42,6 +42,10 @@
                 android:name="android.appwidget.provider"
                 android:resource="@xml/appwidget_provider_info" />
         </receiver>
+
+        <activity
+            android:name="altcoin.br.vcash.CalculatorActivity"
+            android:label="@string/title_activity_calculator" />
     </application>
 
 </manifest>
