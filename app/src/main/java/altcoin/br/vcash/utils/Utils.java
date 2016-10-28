@@ -3,6 +3,8 @@ package altcoin.br.vcash.utils;
 import android.content.ClipData;
 import android.content.ClipboardManager;
 import android.content.Context;
+import android.content.SharedPreferences;
+import android.preference.PreferenceManager;
 import android.text.Html;
 import android.text.SpannableStringBuilder;
 import android.text.Spanned;
@@ -76,5 +78,17 @@ public class Utils {
 
     private static void log(String tag, String text) {
         Log.e(tag, text);
+    }
+
+    public static void writePreference(Context context, String key, String value) {
+        SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(context);
+
+        preferences.edit().putString(key, value).apply();
+    }
+
+    public static String readPreference(Context context, String key, String defaultValue) {
+        SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(context);
+
+        return preferences.getString(key, defaultValue);
     }
 }

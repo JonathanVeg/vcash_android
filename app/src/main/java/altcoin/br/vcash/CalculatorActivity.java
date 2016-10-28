@@ -56,6 +56,11 @@ public class CalculatorActivity extends AppCompatActivity {
         tvCalcXvcInBtc = (TextView) findViewById(R.id.tvCalcXvcInBtc);
         tvCalcXvcInUsd = (TextView) findViewById(R.id.tvCalcXvcInUsd);
 
+        // load in the lasts values used
+
+        etValueToConvertBtc.setText(Utils.readPreference(CalculatorActivity.this, "etValueToConvertBtc", "0"));
+        etValueToConvertUsd.setText(Utils.readPreference(CalculatorActivity.this, "etValueToConvertUsd", "0"));
+        etValueToConvertXvc.setText(Utils.readPreference(CalculatorActivity.this, "etValueToConvertXvc", "0"));
     }
 
     void execApiCall(Response.Listener<String> listener) {
@@ -73,6 +78,8 @@ public class CalculatorActivity extends AppCompatActivity {
             public void onClick(View view) {
                 if (verifyEditTextNull(etValueToConvertBtc)) {
                     hideKeyboard();
+
+                    Utils.writePreference(CalculatorActivity.this, "etValueToConvertBtc", etValueToConvertBtc.getText().toString());
 
                     Response.Listener<String> listener = new Response.Listener<String>() {
                         @Override
@@ -104,6 +111,8 @@ public class CalculatorActivity extends AppCompatActivity {
                 if (verifyEditTextNull(etValueToConvertUsd)) {
                     hideKeyboard();
 
+                    Utils.writePreference(CalculatorActivity.this, "etValueToConvertUsd", etValueToConvertUsd.getText().toString());
+
                     Response.Listener<String> listener = new Response.Listener<String>() {
                         @Override
                         public void onResponse(String response) {
@@ -134,6 +143,8 @@ public class CalculatorActivity extends AppCompatActivity {
                 if (verifyEditTextNull(etValueToConvertXvc)) {
                     hideKeyboard();
 
+                    Utils.writePreference(CalculatorActivity.this, "etValueToConvertXvc", etValueToConvertXvc.getText().toString());
+
                     Response.Listener<String> listener = new Response.Listener<String>() {
                         @Override
                         public void onResponse(String response) {
@@ -143,9 +154,9 @@ public class CalculatorActivity extends AppCompatActivity {
 
                                 double quantity = Double.parseDouble(etValueToConvertXvc.getText().toString());
 
-                                tvCalcXvcInBtc.setText(String.format("%s", quantity * Double.parseDouble(obj.getString("price_btc"))));
+                                tvCalcXvcInBtc.setText(Utils.numberComplete(String.format("%s", quantity * Double.parseDouble(obj.getString("price_btc"))), 8));
 
-                                tvCalcXvcInUsd.setText(String.format("%s", quantity * Double.parseDouble(obj.getString("price_usd"))));
+                                tvCalcXvcInUsd.setText(Utils.numberComplete(String.format("%s", quantity * Double.parseDouble(obj.getString("price_usd"))), 4));
 
                             } catch (Exception e) {
                                 e.printStackTrace();

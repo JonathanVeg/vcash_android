@@ -17,8 +17,14 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.14.1/taskArtifacts/taskArtifacts.bin" afterPath="$PROJECT_DIR$/.gradle/2.14.1/taskArtifacts/taskArtifacts.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.14.1/tasks/_app_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.bin" afterPath="$PROJECT_DIR$/.gradle/2.14.1/tasks/_app_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.14.1/tasks/_app_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.lock" afterPath="$PROJECT_DIR$/.gradle/2.14.1/tasks/_app_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.14.1/tasks/_app_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.bin" afterPath="$PROJECT_DIR$/.gradle/2.14.1/tasks/_app_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.14.1/tasks/_app_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.lock" afterPath="$PROJECT_DIR$/.gradle/2.14.1/tasks/_app_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/altcoin/br/vcash/CalculatorActivity$1$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/altcoin/br/vcash/CalculatorActivity$1$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/altcoin/br/vcash/CalculatorActivity$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/altcoin/br/vcash/CalculatorActivity$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/altcoin/br/vcash/CalculatorActivity$2$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/altcoin/br/vcash/CalculatorActivity$2$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/altcoin/br/vcash/CalculatorActivity$2.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/altcoin/br/vcash/CalculatorActivity$2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/altcoin/br/vcash/CalculatorActivity$3$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/altcoin/br/vcash/CalculatorActivity$3$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/altcoin/br/vcash/CalculatorActivity$3.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/altcoin/br/vcash/CalculatorActivity$3.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/altcoin/br/vcash/CalculatorActivity.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/altcoin/br/vcash/CalculatorActivity.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/altcoin/br/vcash/MainActivity$atParseBittrexData.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/altcoin/br/vcash/MainActivity$atParseBittrexData.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/altcoin/br/vcash/MainActivity$atParsePoloniexData.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/altcoin/br/vcash/MainActivity$atParsePoloniexData.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/altcoin/br/vcash/MainActivity$atParseSummaryData.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/altcoin/br/vcash/MainActivity$atParseSummaryData.class" />
@@ -31,7 +37,7 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/altcoin/br/vcash/R$style.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/altcoin/br/vcash/R$style.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/altcoin/br/vcash/R$styleable.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/altcoin/br/vcash/R$styleable.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/altcoin/br/vcash/R$xml.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/altcoin/br/vcash/R$xml.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/altcoin/br/vcash/utils/InternetRequests.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/altcoin/br/vcash/utils/InternetRequests.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/altcoin/br/vcash/utils/Utils.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/altcoin/br/vcash/utils/Utils.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/altcoin/br/vcash/widget/CoinWidgetProvider$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/altcoin/br/vcash/widget/CoinWidgetProvider$1.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/altcoin/br/vcash/widget/CoinWidgetProvider$2.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/altcoin/br/vcash/widget/CoinWidgetProvider$2.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/altcoin/br/vcash/widget/CoinWidgetProvider.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/altcoin/br/vcash/widget/CoinWidgetProvider.class" />
@@ -54,16 +60,12 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merger.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merger.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/packageDebug/dex-renamer-state.txt" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/packageDebug/dex-renamer-state.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/packageDebug/file-input-save-data.txt" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/packageDebug/file-input-save-data.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/manifests/full/debug/AndroidManifest.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/manifests/full/debug/AndroidManifest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/layout/appwidget_coin.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/layout/appwidget_coin.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/layout/activity_calculator.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/layout/activity_calculator.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/values/values.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/values/values.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/symbols/debug/R.txt" afterPath="$PROJECT_DIR$/app/build/intermediates/symbols/debug/R.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/outputs/logs/manifest-merger-debug-report.txt" afterPath="$PROJECT_DIR$/app/build/outputs/logs/manifest-merger-debug-report.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/altcoin/br/vcash/MainActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/altcoin/br/vcash/MainActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/altcoin/br/vcash/utils/InternetRequests.java" afterPath="$PROJECT_DIR$/app/src/main/java/altcoin/br/vcash/utils/InternetRequests.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/altcoin/br/vcash/widget/CoinWidgetProvider.java" afterPath="$PROJECT_DIR$/app/src/main/java/altcoin/br/vcash/widget/CoinWidgetProvider.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/appwidget_coin.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/appwidget_coin.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/altcoin/br/vcash/CalculatorActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/altcoin/br/vcash/CalculatorActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/altcoin/br/vcash/utils/Utils.java" afterPath="$PROJECT_DIR$/app/src/main/java/altcoin/br/vcash/utils/Utils.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_calculator.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_calculator.xml" />
     </list>
     <ignored path="vcash_android.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -96,54 +98,34 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="MainActivity.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/altcoin/br/vcash/MainActivity.java">
+      <file leaf-file-name="CalculatorActivity.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/altcoin/br/vcash/CalculatorActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="568">
-              <caret line="472" column="38" selection-start-line="472" selection-start-column="38" selection-end-line="472" selection-end-column="38" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#18627#18628#0" expanded="true" />
-                <element signature="e#18675#18676#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CoinWidgetProvider.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/altcoin/br/vcash/widget/CoinWidgetProvider.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="273">
-              <caret line="45" column="36" selection-start-line="45" selection-start-column="36" selection-end-line="45" selection-end-column="36" />
-              <folding>
-                <element signature="e#3494#4000#0" expanded="true" />
-                <element signature="e#3999#4000#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AndroidManifest.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="416">
-              <caret line="32" column="38" selection-start-line="32" selection-start-column="38" selection-end-line="32" selection-end-column="76" />
+            <state relative-caret-position="138">
+              <caret line="36" column="0" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
               <folding />
             </state>
           </provider>
-          <provider editor-type-id="android-manifest">
-            <state />
-          </provider>
         </entry>
       </file>
-      <file leaf-file-name="appwidget_coin.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/appwidget_coin.xml">
+      <file leaf-file-name="activity_calculator.xml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_calculator.xml">
           <provider editor-type-id="android-designer2">
             <state />
           </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="169">
-              <caret line="16" column="34" selection-start-line="16" selection-start-column="34" selection-end-line="16" selection-end-column="34" />
+            <state relative-caret-position="182">
+              <caret line="14" column="8" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="8" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Utils.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/altcoin/br/vcash/utils/Utils.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="707">
+              <caret line="92" column="5" selection-start-line="92" selection-start-column="5" selection-end-line="92" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -1942,7 +1924,6 @@
         <option value="$PROJECT_DIR$/app/src/main/java/data/DBTools.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/box_widget.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/xml/appwidget_provider_info.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/altcoin/br/vcash/utils/Utils.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/values/api-keys.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout-land/activity_main.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" />
@@ -1954,13 +1935,14 @@
         <option value="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/menu/action_bar.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/values/styles.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_calculator.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/altcoin/br/vcash/CalculatorActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/altcoin/br/vcash/utils/InternetRequests.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/appwidget_coin.xml" />
         <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/altcoin/br/vcash/widget/CoinWidgetProvider.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/altcoin/br/vcash/MainActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/altcoin/br/vcash/CalculatorActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/altcoin/br/vcash/utils/Utils.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_calculator.xml" />
       </list>
     </option>
   </component>
@@ -2352,7 +2334,7 @@
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.41842106" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.41842106" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -2364,7 +2346,7 @@
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3111588" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3111588" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -2664,14 +2646,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/values/api_keys.xml" />
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/altcoin/br/vcash/utils/Utils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="39" column="58" selection-start-line="39" selection-start-column="58" selection-end-line="39" selection-end-column="58" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/chart.xml">
       <provider editor-type-id="android-designer2">
         <state />
@@ -2793,38 +2767,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/altcoin/br/vcash/CalculatorActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="213">
-          <caret line="135" column="0" selection-start-line="135" selection-start-column="0" selection-end-line="135" selection-end-column="0" />
-          <folding>
-            <element signature="e#2203#3387#0" expanded="true" />
-            <element signature="e#2456#3300#0" expanded="true" />
-            <element signature="e#3299#3300#0" expanded="true" />
-            <element signature="e#3386#3387#0" expanded="true" />
-            <element signature="e#3432#4616#0" expanded="true" />
-            <element signature="e#3685#4529#0" expanded="true" />
-            <element signature="e#4528#4529#0" expanded="true" />
-            <element signature="e#4615#4616#0" expanded="true" />
-            <element signature="e#4661#5957#0" expanded="true" />
-            <element signature="e#4914#5870#0" expanded="true" />
-            <element signature="e#5869#5870#0" expanded="true" />
-            <element signature="e#5956#5957#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_calculator.xml">
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="151" column="53" selection-start-line="151" selection-start-column="53" selection-end-line="151" selection-end-column="53" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/altcoin/br/vcash/utils/InternetRequests.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="244">
@@ -2868,13 +2810,40 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/altcoin/br/vcash/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="568">
-          <caret line="472" column="38" selection-start-line="472" selection-start-column="38" selection-end-line="472" selection-end-column="38" />
+        <state relative-caret-position="73">
+          <caret line="450" column="42" selection-start-line="450" selection-start-column="42" selection-end-line="450" selection-end-column="42" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#18627#18628#0" expanded="true" />
             <element signature="e#18675#18676#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/altcoin/br/vcash/utils/Utils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="707">
+          <caret line="92" column="5" selection-start-line="92" selection-start-column="5" selection-end-line="92" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/altcoin/br/vcash/CalculatorActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="36" column="0" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_calculator.xml">
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="14" column="8" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="8" />
+          <folding />
         </state>
       </provider>
     </entry>

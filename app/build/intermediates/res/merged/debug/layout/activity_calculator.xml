@@ -12,6 +12,14 @@
         android:paddingEnd="@dimen/activity_margin"
         android:paddingStart="@dimen/activity_margin"
         android:paddingTop="@dimen/activity_margin">
+        
+        <LinearLayout
+            android:id="@+id/llDummyLayoutToPreventFocus"
+            android:layout_width="0px"
+            android:layout_height="0px"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical" />
 
         <ImageView
             android:layout_width="wrap_content"
