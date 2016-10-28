@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="altcoin.br.vcash"
-    android:versionCode="3"
-    android:versionName="1.02" >
+    android:versionCode="4"
+    android:versionName="2.0" >
 
     <uses-sdk
         android:minSdkVersion="17"
@@ -31,17 +31,22 @@
 
         <meta-data
             android:name="io.fabric.ApiKey"
-            android:value="@string/fabricio" />
+            android:value="1b9e889468bf967dddcafc0104451052e83223bd" />
 
         <receiver android:name="altcoin.br.vcash.widget.CoinWidgetProvider" >
             <intent-filter>
                 <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+                <action android:name="android.appwidget.action.UPDATE_BUTTON" />
             </intent-filter>
 
             <meta-data
                 android:name="android.appwidget.provider"
                 android:resource="@xml/appwidget_provider_info" />
         </receiver>
+
+        <activity
+            android:name="altcoin.br.vcash.CalculatorActivity"
+            android:label="@string/title_activity_calculator" />
     </application>
 
 </manifest>

@@ -66,12 +66,6 @@
             android:text="Exchanges"
             android:textStyle="bold" />
 
-        <!--
-        I know using a recycler view would be more 'correct',
-        but as the quantity of exchanges are small, I think all the
-        structure for creating a list (adapters, etc) is not necessary now
-        -->
-
         <!-- another way for showing the data - now only in test-->
         <!--<include layout="@layout/exchanges" />-->
 

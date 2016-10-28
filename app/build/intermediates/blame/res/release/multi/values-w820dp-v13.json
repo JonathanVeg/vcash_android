@@ -13,11 +13,11 @@
                 "from": {
                     "file": "/home/jonathan/Desktop/vcash_android/app/src/main/res/values-w820dp/dimens.xml",
                     "position": {
-                        "startLine": 4,
+                        "startLine": 8,
                         "startColumn": 4,
-                        "startOffset": 291,
+                        "startOffset": 567,
                         "endColumn": 57,
-                        "endOffset": 344
+                        "endOffset": 620
                     }
                 }
             }
