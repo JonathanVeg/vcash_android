@@ -596,9 +596,10 @@ int id tvPoloniexBid 0x7f0b0076
 int id tvPoloniexChanges 0x7f0b0078
 int id tvPoloniexLast 0x7f0b0074
 int id tvPoloniexTitle 0x7f0b0073
+int id tvSummary24hChanges 0x7f0b007c
 int id tvSummaryBtcPrice 0x7f0b007b
-int id tvSummaryUsd24hVolume 0x7f0b007c
-int id tvSummaryUsdMarketCap 0x7f0b007d
+int id tvSummaryUsd24hVolume 0x7f0b007d
+int id tvSummaryUsdMarketCap 0x7f0b007e
 int id tvSummaryUsdPrice 0x7f0b007a
 int id tvWidChanges 0x7f0b005b
 int id tvWidNameCoin 0x7f0b0058

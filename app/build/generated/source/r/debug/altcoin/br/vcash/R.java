@@ -1889,9 +1889,10 @@ containing a value of this type.
         public static final int tvPoloniexChanges=0x7f0b0078;
         public static final int tvPoloniexLast=0x7f0b0074;
         public static final int tvPoloniexTitle=0x7f0b0073;
+        public static final int tvSummary24hChanges=0x7f0b007c;
         public static final int tvSummaryBtcPrice=0x7f0b007b;
-        public static final int tvSummaryUsd24hVolume=0x7f0b007c;
-        public static final int tvSummaryUsdMarketCap=0x7f0b007d;
+        public static final int tvSummaryUsd24hVolume=0x7f0b007d;
+        public static final int tvSummaryUsdMarketCap=0x7f0b007e;
         public static final int tvSummaryUsdPrice=0x7f0b007a;
         public static final int tvWidChanges=0x7f0b005b;
         public static final int tvWidNameCoin=0x7f0b0058;

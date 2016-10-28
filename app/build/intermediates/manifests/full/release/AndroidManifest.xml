@@ -31,7 +31,17 @@
 
         <meta-data
             android:name="io.fabric.ApiKey"
-            android:value="1b9e889468bf967dddcafc0104451052e83223bd" />
+            android:value="@string/fabricio" />
+
+        <receiver android:name="altcoin.br.vcash.widget.CoinWidgetProvider" >
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/appwidget_provider_info" />
+        </receiver>
     </application>
 
 </manifest>

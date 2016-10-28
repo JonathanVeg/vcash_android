@@ -239,11 +239,15 @@ public class MainActivity extends AppCompatActivity {
         zoom.add("6h");
         zoom.add("24h");
         zoom.add("2d");
+        zoom.add("1w");
+        zoom.add("2w");
+        zoom.add("1m");
 
         candle.add("5-min");
         candle.add("15-min");
         candle.add("30-min");
         candle.add("120-min");
+        candle.add("240-min");
 
         adapterZoom = new ArrayAdapter<>(this, android.R.layout.simple_spinner_item, zoom);
         adapterZoom.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
@@ -280,6 +284,15 @@ public class MainActivity extends AppCompatActivity {
                     case "2d":
                         chartZoom = 48;
                         break;
+                    case "1w":
+                        chartZoom = 24 * 7;
+                        break;
+                    case "2w":
+                        chartZoom = 24 * 7 * 2;
+                        break;
+                    case "1m":
+                        chartZoom = 24 * 30;
+                        break;
 
                     default:
                         chartZoom = 3;
@@ -311,6 +324,9 @@ public class MainActivity extends AppCompatActivity {
                         break;
                     case "120":
                         chartCandle = 120 * 60;
+                        break;
+                    case "240":
+                        chartCandle = 240 * 60;
                         break;
 
                     default:
@@ -536,6 +552,7 @@ public class MainActivity extends AppCompatActivity {
         String usdPrice;
         String btcPrice;
         String usdVolume24h;
+        String p24hChanges;
         String usdMarketCap;
 
         atParseSummaryData(String response) {
@@ -550,6 +567,7 @@ public class MainActivity extends AppCompatActivity {
 
                 usdPrice = Utils.numberComplete(obj.getString("price_usd"), 4);
                 btcPrice = Utils.numberComplete(obj.getString("price_btc"), 8);
+                p24hChanges = Utils.numberComplete(obj.getString("percent_change_24h"), 2);
                 usdVolume24h = Utils.numberComplete(obj.getString("24h_volume_usd"), 4);
                 usdMarketCap = Utils.numberComplete(obj.getString("market_cap_usd"), 4);
 
@@ -568,11 +586,18 @@ public class MainActivity extends AppCompatActivity {
             TextView tvSummaryBtcPrice = (TextView) findViewById(R.id.tvSummaryBtcPrice);
             TextView tvSummaryUsd24hVolume = (TextView) findViewById(R.id.tvSummaryUsd24hVolume);
             TextView tvSummaryUsdMarketCap = (TextView) findViewById(R.id.tvSummaryUsdMarketCap);
+            TextView tvSummary24hChanges = (TextView) findViewById(R.id.tvSummary24hChanges);
 
             tvSummaryUsdPrice.setText(usdPrice);
             tvSummaryBtcPrice.setText(btcPrice);
             tvSummaryUsd24hVolume.setText(usdVolume24h);
             tvSummaryUsdMarketCap.setText(usdMarketCap);
+            tvSummary24hChanges.setText(p24hChanges);
+
+            if (Double.parseDouble(p24hChanges) >= 0)
+                tvSummary24hChanges.setTextColor(ContextCompat.getColor(MainActivity.this, R.color.colorChangesUp));
+            else
+                tvSummary24hChanges.setTextColor(ContextCompat.getColor(MainActivity.this, R.color.colorChangesDown));
 
             tvLastUpdate.setText(Utils.now());
         }

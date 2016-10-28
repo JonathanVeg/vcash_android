@@ -25,7 +25,7 @@
 
         <meta-data
             android:name="io.fabric.ApiKey"
-            android:value="@string/fabricio" />
+            android:value="1b9e889468bf967dddcafc0104451052e83223bd" />
 
         <receiver android:name=".widget.CoinWidgetProvider">
             <intent-filter>
