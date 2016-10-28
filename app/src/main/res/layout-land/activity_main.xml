@@ -107,6 +107,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:text="Donate: VoBZoGGxnAFxgm8TxvaUYc9LYvmurRfHEg"
-            android:textAlignment="viewEnd" />
+            android:textAlignment="viewEnd"
+            android:visibility="gone" />
     </LinearLayout>
 </ScrollView>
