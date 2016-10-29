@@ -21,4 +21,4 @@ This app was made using Android Studio and Java (Android native application).
 
 
 **Disclaimer:**
-Important legal information: I was authorized for using the official logos and colors.
+I was authorized for using the official logos and colors.
