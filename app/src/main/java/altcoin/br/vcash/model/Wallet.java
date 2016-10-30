@@ -2,6 +2,9 @@ package altcoin.br.vcash.model;
 
 import android.content.Context;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import altcoin.br.vcash.data.DBTools;
 
 public class Wallet {
@@ -23,7 +26,7 @@ public class Wallet {
 
         try {
 
-            return db.exec("insert into wallets (address) values('ADDRESS')".replaceAll("ADDRESS", getAddress()));
+            return db.search("select * from wallets where address = 'ADDRESS'".replaceAll("ADDRESS", getAddress())) <= 0 && db.exec("insert into wallets (address) values('ADDRESS')".replaceAll("ADDRESS", getAddress()));
 
         } catch (Exception e) {
             e.printStackTrace();
@@ -33,6 +36,44 @@ public class Wallet {
             db.close();
         }
     }
+
+    public boolean delete(Context c) {
+        DBTools db = new DBTools(c);
+
+        try {
+
+            return db.exec("delete from wallets where address = 'ADDRESS'".replaceAll("ADDRESS", getAddress()));
+
+        } catch (Exception e) {
+            e.printStackTrace();
+
+            return false;
+        } finally {
+            db.close();
+        }
+    }
+
+    public static List<Wallet> loadAll(Context c) {
+        DBTools db = new DBTools(c);
+
+        List<Wallet> wallets = new ArrayList<>();
+
+        try {
+
+            for (int i = 0; i < db.search("select address from wallets"); i++)
+                wallets.add(new Wallet(db.getData(i, 0)));
+
+            return wallets;
+
+        } catch (Exception e) {
+            e.printStackTrace();
+
+            return wallets;
+        } finally {
+            db.close();
+        }
+    }
+
 
     public String getAddress() {
         return address;

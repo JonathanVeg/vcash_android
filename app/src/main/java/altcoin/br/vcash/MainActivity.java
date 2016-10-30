@@ -84,6 +84,13 @@ public class MainActivity extends AppCompatActivity {
         // not ready yet
         // startService(new Intent(this, NotificationCoinService.class));
 
+
+    }
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+
         // creating the handler for updating the altcoin.br.vcash.data constantily
         try {
 
@@ -93,6 +100,22 @@ public class MainActivity extends AppCompatActivity {
 
         } catch (Exception e) {
             Log.e("Handler", "Error while creating handler");
+
+            e.printStackTrace();
+        }
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+
+        // creating the handler for updating the altcoin.br.vcash.data constantily
+        try {
+
+            handler.removeCallbacks(runnableCode);
+
+        } catch (Exception e) {
+            Log.e("Handler", "Error while pausing handler");
 
             e.printStackTrace();
         }
