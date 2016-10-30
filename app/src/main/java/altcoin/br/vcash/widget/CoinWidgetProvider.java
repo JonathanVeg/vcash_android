@@ -25,7 +25,7 @@ import altcoin.br.vcash.utils.Utils;
 
 public class CoinWidgetProvider extends AppWidgetProvider {
 
-    public static String WIDGET_BUTTON = "android.appwidget.action.UPDATE_BUTTON";
+    private static String WIDGET_BUTTON = "android.appwidget.action.UPDATE_BUTTON";
 
 
     @Override

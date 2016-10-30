@@ -39,7 +39,7 @@ public class WalletsActivity extends AppCompatActivity {
         prepareListeners();
     }
 
-    void instanceObjects() {
+    private void instanceObjects() {
         srWallets = (SwipeRefreshLayout) findViewById(R.id.srWallets);
 
         bWalletsAddSave = (Button) findViewById(R.id.bWalletsAddSave);
@@ -67,7 +67,7 @@ public class WalletsActivity extends AppCompatActivity {
         rvWallets.setAdapter(adapter);
     }
 
-    void prepareListeners() {
+    private void prepareListeners() {
         srWallets.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
             @Override
             public void onRefresh() {

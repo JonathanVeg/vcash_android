@@ -20,16 +20,16 @@ import altcoin.br.vcash.utils.Utils;
 
 public class CalculatorActivity extends AppCompatActivity {
 
-    Button bConvertBtcTo;
-    Button bConvertUsdTo;
-    Button bConvertXvcTo;
-    EditText etValueToConvertBtc;
-    EditText etValueToConvertUsd;
-    EditText etValueToConvertXvc;
-    TextView tvCalcBtcInXvc;
-    TextView tvCalcUsdInXvc;
-    TextView tvCalcXvcInBtc;
-    TextView tvCalcXvcInUsd;
+    private Button bConvertBtcTo;
+    private Button bConvertUsdTo;
+    private Button bConvertXvcTo;
+    private EditText etValueToConvertBtc;
+    private EditText etValueToConvertUsd;
+    private EditText etValueToConvertXvc;
+    private TextView tvCalcBtcInXvc;
+    private TextView tvCalcUsdInXvc;
+    private TextView tvCalcXvcInBtc;
+    private TextView tvCalcXvcInUsd;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,7 +41,7 @@ public class CalculatorActivity extends AppCompatActivity {
         prepareListeners();
     }
 
-    void intanceObjects() {
+    private void intanceObjects() {
 
         bConvertBtcTo = (Button) findViewById(R.id.bConvertBtcTo);
         bConvertUsdTo = (Button) findViewById(R.id.bConvertUsdTo);
@@ -63,7 +63,7 @@ public class CalculatorActivity extends AppCompatActivity {
         etValueToConvertXvc.setText(Utils.readPreference(CalculatorActivity.this, "etValueToConvertXvc", "0"));
     }
 
-    void execApiCall(Response.Listener<String> listener) {
+    private void execApiCall(Response.Listener<String> listener) {
 
         String url = "https://api.coinmarketcap.com/v1/ticker/vcash/";
 
@@ -71,7 +71,7 @@ public class CalculatorActivity extends AppCompatActivity {
         internetRequests.executeGet(url, listener);
     }
 
-    void prepareListeners() {
+    private void prepareListeners() {
 
         bConvertBtcTo.setOnClickListener(new View.OnClickListener() {
             @Override

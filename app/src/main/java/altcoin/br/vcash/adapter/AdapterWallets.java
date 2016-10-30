@@ -2,7 +2,6 @@ package altcoin.br.vcash.adapter;
 
 import android.content.Context;
 import android.os.AsyncTask;
-import android.support.v4.content.ContextCompat;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -16,7 +15,6 @@ import org.json.JSONObject;
 
 import java.util.List;
 
-import altcoin.br.vcash.MainActivity;
 import altcoin.br.vcash.R;
 import altcoin.br.vcash.model.Wallet;
 import altcoin.br.vcash.utils.InternetRequests;
@@ -154,7 +152,6 @@ public class AdapterWallets extends RecyclerView.Adapter<RecyclerView.ViewHolder
             h.tvWalletsBalanceInBtc.setText(Utils.numberComplete(Double.parseDouble(wallet.getBalance()) * btcPrice, 8));
 
             h.tvWalletsBalanceInUsd.setText(Utils.numberComplete(Double.parseDouble(wallet.getBalance()) * usdPrice, 4));
-            ;
         }
     }
 }
