@@ -84,7 +84,7 @@ public class MainActivity extends AppCompatActivity {
         // not ready yet
         // startService(new Intent(this, NotificationCoinService.class));
 
-        // creating the handler for updating the data constantily
+        // creating the handler for updating the altcoin.br.vcash.data constantily
         try {
 
             handler = new Handler();
@@ -131,6 +131,11 @@ public class MainActivity extends AppCompatActivity {
         switch (item.getItemId()) {
             case R.id.calculator:
                 startActivity(new Intent(this, CalculatorActivity.class));
+
+                return true;
+
+            case R.id.wallets:
+                startActivity(new Intent(this, WalletsActivity.class));
 
                 return true;
 

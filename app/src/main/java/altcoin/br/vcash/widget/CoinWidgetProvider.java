@@ -8,6 +8,7 @@ import android.content.ComponentName;
 import android.content.Context;
 import android.content.Intent;
 import android.widget.RemoteViews;
+import android.widget.Toast;
 
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
@@ -33,6 +34,8 @@ public class CoinWidgetProvider extends AppWidgetProvider {
 
         if (WIDGET_BUTTON.equals(intent.getAction())) {
             try {
+                Toast.makeText(context, "Updating widget", Toast.LENGTH_LONG).show();
+
                 AppWidgetManager appWidgetManager = AppWidgetManager.getInstance(context.getApplicationContext());
 
                 ComponentName thisWidget = new ComponentName(context.getApplicationContext(), CoinWidgetProvider.class);

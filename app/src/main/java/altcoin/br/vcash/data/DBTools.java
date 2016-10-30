@@ -1,4 +1,4 @@
-package data;
+package altcoin.br.vcash.data;
 
 import android.content.ContentValues;
 import android.content.Context;

@@ -1,4 +1,4 @@
-package data;
+package altcoin.br.vcash.data;
 
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
@@ -6,7 +6,7 @@ import android.database.sqlite.SQLiteOpenHelper;
 
 class CreateDatabase extends SQLiteOpenHelper {
 
-    private static int CURRENT_DB_VERSION = 1;
+    private static int CURRENT_DB_VERSION = 2;
 
     CreateDatabase(Context context, String dbName) {
         super(context, dbName, null, CURRENT_DB_VERSION);
@@ -29,6 +29,13 @@ class CreateDatabase extends SQLiteOpenHelper {
         switch (newVersion) {
             case 1:
                 break;
+
+            case 2:
+                db.execSQL("CREATE TABLE if not exists wallets(" +
+                        "_id integer primary key autoincrement, " +
+                        "address varchar(100), " +
+                        "last_balance double" +
+                        ")");
         }
     }
 

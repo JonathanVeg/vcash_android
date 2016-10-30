@@ -66,7 +66,7 @@
             android:text="Exchanges"
             android:textStyle="bold" />
 
-        <!-- another way for showing the data - now only in test-->
+        <!-- another way for showing the altcoin.br.vcash.data - now only in test-->
         <!--<include layout="@layout/exchanges" />-->
 
         <include layout="@layout/bittrex" />
