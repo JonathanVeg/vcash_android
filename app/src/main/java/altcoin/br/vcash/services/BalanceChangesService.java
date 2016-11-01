@@ -23,6 +23,7 @@ import java.util.TimerTask;
 import altcoin.br.vcash.MainActivity;
 import altcoin.br.vcash.R;
 import altcoin.br.vcash.data.DBTools;
+import altcoin.br.vcash.model.Wallet;
 import altcoin.br.vcash.utils.InternetRequests;
 import altcoin.br.vcash.utils.Utils;
 
@@ -75,8 +76,17 @@ public class BalanceChangesService extends Service {
                         public void onResponse(String response) {
                             double currentBalance = Double.parseDouble(response);
 
-                            if (currentBalance != lastBalance)
+                            if (currentBalance != lastBalance) {
                                 createNotification(wallet, "" + lastBalance, "" + currentBalance);
+
+                                // save for avoiding another alerts
+
+                                Wallet w = new Wallet(wallet);
+
+                                w.setBalance(currentBalance + "");
+
+                                w.save(getApplicationContext());
+                            }
                         }
                     };
 

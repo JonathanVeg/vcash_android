@@ -10,9 +10,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2c800d4b-4b0f-4957-b818-f66acf481754" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/altcoin/br/vcash/services/BalanceChangesService.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/drawable/xvc_icon_big.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/values-w820dp-v13/values-w820dp-v13.xml" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.14.1/taskArtifacts/cache.properties.lock" afterPath="$PROJECT_DIR$/.gradle/2.14.1/taskArtifacts/cache.properties.lock" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.14.1/taskArtifacts/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/2.14.1/taskArtifacts/fileHashes.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.14.1/taskArtifacts/fileSnapshots.bin" afterPath="$PROJECT_DIR$/.gradle/2.14.1/taskArtifacts/fileSnapshots.bin" />
@@ -20,100 +17,24 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.14.1/taskArtifacts/taskArtifacts.bin" afterPath="$PROJECT_DIR$/.gradle/2.14.1/taskArtifacts/taskArtifacts.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.14.1/tasks/_app_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.bin" afterPath="$PROJECT_DIR$/.gradle/2.14.1/tasks/_app_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.14.1/tasks/_app_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.lock" afterPath="$PROJECT_DIR$/.gradle/2.14.1/tasks/_app_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.14.1/tasks/_app_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.bin" afterPath="$PROJECT_DIR$/.gradle/2.14.1/tasks/_app_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.14.1/tasks/_app_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.lock" afterPath="$PROJECT_DIR$/.gradle/2.14.1/tasks/_app_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/altcoin/br/vcash/BuildConfig.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/altcoin/br/vcash/BuildConfig.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/altcoin/br/vcash/CalculatorActivity$1$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/altcoin/br/vcash/CalculatorActivity$1$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/altcoin/br/vcash/CalculatorActivity$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/altcoin/br/vcash/CalculatorActivity$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/altcoin/br/vcash/CalculatorActivity$2$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/altcoin/br/vcash/CalculatorActivity$2$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/altcoin/br/vcash/CalculatorActivity$2.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/altcoin/br/vcash/CalculatorActivity$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/altcoin/br/vcash/CalculatorActivity$3$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/altcoin/br/vcash/CalculatorActivity$3$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/altcoin/br/vcash/CalculatorActivity$3.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/altcoin/br/vcash/CalculatorActivity$3.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/altcoin/br/vcash/CalculatorActivity.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/altcoin/br/vcash/CalculatorActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/altcoin/br/vcash/MainActivity$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/altcoin/br/vcash/MainActivity$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/altcoin/br/vcash/MainActivity$2.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/altcoin/br/vcash/MainActivity$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/altcoin/br/vcash/MainActivity$3.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/altcoin/br/vcash/MainActivity$3.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/altcoin/br/vcash/MainActivity$4.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/altcoin/br/vcash/MainActivity$4.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/altcoin/br/vcash/MainActivity$5.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/altcoin/br/vcash/MainActivity$5.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/altcoin/br/vcash/MainActivity$6.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/altcoin/br/vcash/MainActivity$6.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/altcoin/br/vcash/MainActivity$7.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/altcoin/br/vcash/MainActivity$7.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/altcoin/br/vcash/MainActivity$8.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/altcoin/br/vcash/MainActivity$8.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/altcoin/br/vcash/MainActivity$9.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/altcoin/br/vcash/MainActivity$9.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/altcoin/br/vcash/MainActivity$atParseBittrexData.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/altcoin/br/vcash/MainActivity$atParseBittrexData.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/altcoin/br/vcash/MainActivity$atParseCandleJson.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/altcoin/br/vcash/MainActivity$atParseCandleJson.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/altcoin/br/vcash/MainActivity$atParsePoloniexData.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/altcoin/br/vcash/MainActivity$atParsePoloniexData.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/altcoin/br/vcash/MainActivity$atParseSummaryData.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/altcoin/br/vcash/MainActivity$atParseSummaryData.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/altcoin/br/vcash/MainActivity.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/altcoin/br/vcash/MainActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/altcoin/br/vcash/R$color.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/altcoin/br/vcash/R$color.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/altcoin/br/vcash/R$dimen.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/altcoin/br/vcash/R$dimen.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/altcoin/br/vcash/R$drawable.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/altcoin/br/vcash/R$drawable.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/altcoin/br/vcash/R$id.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/altcoin/br/vcash/R$id.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/altcoin/br/vcash/R$integer.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/altcoin/br/vcash/R$integer.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/altcoin/br/vcash/R$layout.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/altcoin/br/vcash/R$layout.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/altcoin/br/vcash/R$menu.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/altcoin/br/vcash/R$menu.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/altcoin/br/vcash/R$string.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/altcoin/br/vcash/R$string.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/altcoin/br/vcash/R$style.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/altcoin/br/vcash/R$style.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/altcoin/br/vcash/R$styleable.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/altcoin/br/vcash/R$styleable.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/altcoin/br/vcash/R$xml.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/altcoin/br/vcash/R$xml.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/altcoin/br/vcash/WalletsActivity$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/altcoin/br/vcash/WalletsActivity$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/altcoin/br/vcash/WalletsActivity$2.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/altcoin/br/vcash/WalletsActivity$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/altcoin/br/vcash/WalletsActivity$3.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/altcoin/br/vcash/WalletsActivity$3.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/altcoin/br/vcash/WalletsActivity.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/altcoin/br/vcash/WalletsActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/altcoin/br/vcash/adapter/AdapterWallets$1$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/altcoin/br/vcash/adapter/AdapterWallets$1$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/altcoin/br/vcash/adapter/AdapterWallets$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/altcoin/br/vcash/adapter/AdapterWallets$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/altcoin/br/vcash/adapter/AdapterWallets$atParseSummaryData.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/altcoin/br/vcash/adapter/AdapterWallets$atParseSummaryData.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/altcoin/br/vcash/adapter/AdapterWallets$myViewHolder.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/altcoin/br/vcash/adapter/AdapterWallets$myViewHolder.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/altcoin/br/vcash/adapter/AdapterWallets.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/altcoin/br/vcash/adapter/AdapterWallets.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/altcoin/br/vcash/data/CreateDatabase.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/altcoin/br/vcash/data/CreateDatabase.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/altcoin/br/vcash/model/Wallet.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/altcoin/br/vcash/model/Wallet.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/altcoin/br/vcash/utils/Utils.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/altcoin/br/vcash/utils/Utils.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/altcoin/br/vcash/widget/CoinWidgetProvider$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/altcoin/br/vcash/widget/CoinWidgetProvider$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/altcoin/br/vcash/widget/CoinWidgetProvider$2.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/altcoin/br/vcash/widget/CoinWidgetProvider$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/altcoin/br/vcash/widget/CoinWidgetProvider.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/altcoin/br/vcash/widget/CoinWidgetProvider.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/android/support/design/R$color.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/android/support/design/R$color.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/android/support/design/R$dimen.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/android/support/design/R$dimen.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/android/support/design/R$drawable.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/android/support/design/R$drawable.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/android/support/design/R$id.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/android/support/design/R$id.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/android/support/v7/appcompat/R$color.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/android/support/v7/appcompat/R$color.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/android/support/v7/appcompat/R$dimen.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/android/support/v7/appcompat/R$dimen.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/android/support/v7/appcompat/R$drawable.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/android/support/v7/appcompat/R$drawable.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/android/support/v7/appcompat/R$id.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/android/support/v7/appcompat/R$id.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/android/support/v7/recyclerview/R$dimen.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/android/support/v7/recyclerview/R$dimen.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/altcoin/br/vcash/services/BalanceChangesService$mainTask$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/altcoin/br/vcash/services/BalanceChangesService$mainTask$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/altcoin/br/vcash/services/BalanceChangesService$mainTask.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/altcoin/br/vcash/services/BalanceChangesService$mainTask.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/altcoin/br/vcash/services/BalanceChangesService.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/altcoin/br/vcash/services/BalanceChangesService.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/packageDebug/zip-cache/31wq9whYt5Ko0uUrA68cbiGiOFI=" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/packageDebug/zip-cache/31wq9whYt5Ko0uUrA68cbiGiOFI=" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/pre-dexed/debug/debug_8c6d6ca631adffbea0f870a95716ae016cfabd87.jar" afterPath="$PROJECT_DIR$/app/build/intermediates/pre-dexed/debug/debug_8c6d6ca631adffbea0f870a95716ae016cfabd87.jar" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/resources-debug.ap_" afterPath="$PROJECT_DIR$/app/build/intermediates/res/resources-debug.ap_" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dex/debug/folders/1000/1f/main/classes.dex" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dex/debug/folders/1000/1f/main/classes.dex" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/outputs/apk/app-debug.apk" afterPath="$PROJECT_DIR$/app/build/outputs/apk/app-debug.apk" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/generated/fabric/res/debug/values/com_crashlytics_build_id.xml" afterPath="$PROJECT_DIR$/app/build/generated/fabric/res/debug/values/com_crashlytics_build_id.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/generated/source/r/debug/altcoin/br/vcash/R.java" afterPath="$PROJECT_DIR$/app/build/generated/source/r/debug/altcoin/br/vcash/R.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/generated/source/r/debug/android/support/design/R.java" afterPath="$PROJECT_DIR$/app/build/generated/source/r/debug/android/support/design/R.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/generated/source/r/debug/android/support/v7/appcompat/R.java" afterPath="$PROJECT_DIR$/app/build/generated/source/r/debug/android/support/v7/appcompat/R.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/generated/source/r/debug/android/support/v7/recyclerview/R.java" afterPath="$PROJECT_DIR$/app/build/generated/source/r/debug/android/support/v7/recyclerview/R.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/assets/debug/crashlytics-build.properties" afterPath="$PROJECT_DIR$/app/build/intermediates/assets/debug/crashlytics-build.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi/values.json" afterPath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi/values.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/single/drawable.json" afterPath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/single/drawable.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/compile-file-map.properties" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/compile-file-map.properties" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values/values.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values/values.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merger.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merger.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/packageDebug/dex-renamer-state.txt" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/packageDebug/dex-renamer-state.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/packageDebug/file-input-save-data.txt" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/packageDebug/file-input-save-data.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/manifests/full/debug/AndroidManifest.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/manifests/full/debug/AndroidManifest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/layout/activity_calculator.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/layout/activity_calculator.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/layout/activity_wallets.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/layout/activity_wallets.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/layout/appwidget_coin.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/layout/appwidget_coin.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/values/values.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/values/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/symbols/debug/R.txt" afterPath="$PROJECT_DIR$/app/build/intermediates/symbols/debug/R.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/outputs/logs/manifest-merger-debug-report.txt" afterPath="$PROJECT_DIR$/app/build/outputs/logs/manifest-merger-debug-report.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/altcoin/br/vcash/MainActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/altcoin/br/vcash/MainActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/altcoin/br/vcash/WalletsActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/altcoin/br/vcash/WalletsActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/altcoin/br/vcash/adapter/AdapterWallets.java" afterPath="$PROJECT_DIR$/app/src/main/java/altcoin/br/vcash/adapter/AdapterWallets.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/altcoin/br/vcash/data/CreateDatabase.java" afterPath="$PROJECT_DIR$/app/src/main/java/altcoin/br/vcash/data/CreateDatabase.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/altcoin/br/vcash/model/Wallet.java" afterPath="$PROJECT_DIR$/app/src/main/java/altcoin/br/vcash/model/Wallet.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/altcoin/br/vcash/utils/Utils.java" afterPath="$PROJECT_DIR$/app/src/main/java/altcoin/br/vcash/utils/Utils.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_wallets.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_wallets.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/altcoin/br/vcash/services/BalanceChangesService.java" afterPath="$PROJECT_DIR$/app/src/main/java/altcoin/br/vcash/services/BalanceChangesService.java" />
     </list>
     <ignored path="vcash_android.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -183,11 +104,12 @@
       <file leaf-file-name="BalanceChangesService.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/altcoin/br/vcash/services/BalanceChangesService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="122">
-              <caret line="24" column="37" selection-start-line="24" selection-start-column="37" selection-end-line="24" selection-end-column="37" />
+            <state relative-caret-position="408">
+              <caret line="85" column="28" selection-start-line="85" selection-start-column="28" selection-end-line="85" selection-end-column="28" />
               <folding>
-                <element signature="e#2029#2455#0" expanded="true" />
-                <element signature="e#2454#2455#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+                <element signature="e#2067#2792#0" expanded="true" />
+                <element signature="e#2791#2792#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -2872,11 +2794,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/altcoin/br/vcash/services/BalanceChangesService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="122">
-          <caret line="24" column="37" selection-start-line="24" selection-start-column="37" selection-end-line="24" selection-end-column="37" />
+        <state relative-caret-position="408">
+          <caret line="85" column="28" selection-start-line="85" selection-start-column="28" selection-end-line="85" selection-end-column="28" />
           <folding>
-            <element signature="e#2029#2455#0" expanded="true" />
-            <element signature="e#2454#2455#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#2067#2792#0" expanded="true" />
+            <element signature="e#2791#2792#0" expanded="true" />
           </folding>
         </state>
       </provider>
