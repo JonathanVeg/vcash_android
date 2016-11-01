@@ -12,6 +12,12 @@ You can also:
 
 You can contact me directly in my email: jonathan.jgs@gmail.com
 
+All the data I get are from this websites:
+
+https://bittrex.com
+https://poloniex.com
+https://coinmarketcap.com
+
 ### Tech
 
 This app was made using Android Studio and Java (Android native application).
