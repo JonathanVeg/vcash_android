@@ -17,6 +17,7 @@ All the data I get are from this websites:
 https://bittrex.com
 https://poloniex.com
 https://coinmarketcap.com
+https://www.blockexperts.com/xvc
 
 ### Tech
 
