@@ -26,7 +26,8 @@ public class Wallet {
 
         try {
 
-            return db.search("select * from wallets where address = 'ADDRESS'".replaceAll("ADDRESS", getAddress())) <= 0 && db.exec("insert into wallets (address) values('ADDRESS')".replaceAll("ADDRESS", getAddress()));
+            return db.search("select * from wallets where address = 'ADDRESS'".replaceAll("ADDRESS", getAddress())) <= 0
+                    && db.exec("insert into wallets (address, last_balance) values('ADDRESS', 'BALANCE')".replaceAll("ADDRESS", getAddress()).replaceAll("BALANCE", getBalance()));
 
         } catch (Exception e) {
             e.printStackTrace();

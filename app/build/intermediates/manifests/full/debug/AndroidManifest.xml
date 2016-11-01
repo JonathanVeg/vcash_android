@@ -34,6 +34,9 @@
         <service
             android:name="altcoin.br.vcash.services.NotificationCoinService"
             android:enabled="true" />
+        <service
+            android:name="altcoin.br.vcash.services.BalanceChangesService"
+            android:enabled="true" />
 
         <meta-data
             android:name="io.fabric.ApiKey"

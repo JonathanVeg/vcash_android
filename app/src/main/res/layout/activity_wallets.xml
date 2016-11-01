@@ -55,6 +55,12 @@
             android:textColor="@color/white" />
     </RelativeLayout>
 
+    <CheckBox
+        android:id="@+id/cbAlertBalanceChanges"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Alert me when balance changes"/>
+
     <android.support.v4.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
         android:id="@+id/srWallets"
         android:layout_width="match_parent"

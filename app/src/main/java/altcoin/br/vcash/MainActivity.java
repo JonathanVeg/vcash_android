@@ -34,6 +34,7 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
+import altcoin.br.vcash.services.BalanceChangesService;
 import altcoin.br.vcash.utils.InternetRequests;
 import altcoin.br.vcash.utils.Utils;
 
@@ -81,10 +82,7 @@ public class MainActivity extends AppCompatActivity {
 
         loadChart();
 
-        // not ready yet
-        // startService(new Intent(this, NotificationCoinService.class));
-
-
+        startService(new Intent(this, BalanceChangesService.class));
     }
 
     @Override

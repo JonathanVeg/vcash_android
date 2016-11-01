@@ -86,9 +86,21 @@ public class Utils {
         preferences.edit().putString(key, value).apply();
     }
 
+    public static void writePreference(Context context, String key, Boolean value) {
+        SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(context);
+
+        preferences.edit().putBoolean(key, value).apply();
+    }
+
     public static String readPreference(Context context, String key, String defaultValue) {
         SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(context);
 
         return preferences.getString(key, defaultValue);
+    }
+
+    public static boolean readPreference(Context context, String key, boolean defaultValue) {
+        SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(context);
+
+        return preferences.getBoolean(key, defaultValue);
     }
 }

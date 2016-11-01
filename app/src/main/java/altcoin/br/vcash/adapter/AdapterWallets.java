@@ -24,8 +24,11 @@ public class AdapterWallets extends RecyclerView.Adapter<RecyclerView.ViewHolder
 
     private LayoutInflater layoutInflater;
     private List<Wallet> wallets;
+    private Context context;
 
     public AdapterWallets(Context context, List<Wallet> wallets) {
+        this.context = context;
+
         this.wallets = wallets;
 
         this.layoutInflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
@@ -91,6 +94,8 @@ public class AdapterWallets extends RecyclerView.Adapter<RecyclerView.ViewHolder
             @Override
             public void onResponse(String response) {
                 wallet.setBalance(response);
+
+                wallet.save(context);
 
                 h.tvWalletsBalance.setText(Utils.numberComplete(wallet.getBalance(), 8));
 
