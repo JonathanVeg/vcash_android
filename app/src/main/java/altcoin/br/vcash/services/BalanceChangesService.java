@@ -37,7 +37,7 @@ public class BalanceChangesService extends Service {
     public void onCreate() {
         super.onCreate();
 
-        int minutes = 15;
+        int minutes = 1;
 
         timer.scheduleAtFixedRate(new mainTask(), 0, minutes * 60 * 1000);
 
@@ -58,7 +58,9 @@ public class BalanceChangesService extends Service {
             DBTools db = new DBTools(getApplicationContext());
 
             try {
-                int count = db.search("select address, last_balance from wallets");
+                int count = db.search("select address, balance from wallets");
+
+                Utils.log("COUNT ::: " + count);
 
                 if (count == 0) {
                     stopSelf();
@@ -69,23 +71,27 @@ public class BalanceChangesService extends Service {
                 for (int i = 0; i < count; i++) {
                     final String wallet = db.getData(i, 0);
 
-                    final double lastBalance = Double.parseDouble(db.getData(i, 1));
+                    final String lastBalance = db.getData(i, 1);
 
                     Response.Listener<String> listener = new Response.Listener<String>() {
                         @Override
                         public void onResponse(String response) {
-                            double currentBalance = Double.parseDouble(response);
+                            if (!Utils.numberComplete(response, 8).equals(Utils.numberComplete(lastBalance, 8))) {
+                                Utils.log("" + response);
 
-                            if (currentBalance != lastBalance) {
-                                createNotification(wallet, "" + lastBalance, "" + currentBalance);
+                                Utils.log("" + lastBalance);
 
                                 // save for avoiding another alerts
 
                                 Wallet w = new Wallet(wallet);
 
-                                w.setBalance(currentBalance + "");
+                                w.setBalance(response + "");
 
-                                w.save(getApplicationContext());
+                                boolean saved = w.save(getApplicationContext());
+
+                                Utils.log(" ::: " + saved);
+
+                                createNotification(wallet, "" + lastBalance, "" + response);
                             }
                         }
                     };

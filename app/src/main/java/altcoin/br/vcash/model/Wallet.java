@@ -6,6 +6,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import altcoin.br.vcash.data.DBTools;
+import altcoin.br.vcash.utils.Utils;
 
 public class Wallet {
     private String address;
@@ -26,8 +27,15 @@ public class Wallet {
 
         try {
 
-            return db.search("select * from wallets where address = 'ADDRESS'".replaceAll("ADDRESS", getAddress())) <= 0
-                    && db.exec("insert into wallets (address, last_balance) values('ADDRESS', 'BALANCE')".replaceAll("ADDRESS", getAddress()).replaceAll("BALANCE", getBalance()));
+            String sql = "delete from wallets where address = 'ADDRESS'".replaceAll("ADDRESS", getAddress());
+
+            Utils.log(sql + " ::: " + db.exec(sql));
+
+            sql = "insert into wallets(address, balance) values('ADDRESS', 'BALANCE')".replaceAll("ADDRESS", getAddress()).replaceAll("BALANCE", getBalance());
+
+            Utils.log(sql);
+
+            return db.exec(sql);
 
         } catch (Exception e) {
             e.printStackTrace();

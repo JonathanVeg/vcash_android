@@ -137,7 +137,6 @@ public class AdapterWallets extends RecyclerView.Adapter<RecyclerView.ViewHolder
         @Override
         protected Void doInBackground(Void... voids) {
             try {
-
                 JSONObject obj = new JSONArray(response).getJSONObject(0);
 
                 usdPrice = obj.getDouble("price_usd");

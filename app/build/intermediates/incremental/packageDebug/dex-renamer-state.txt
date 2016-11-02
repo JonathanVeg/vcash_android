@@ -1,4 +1,4 @@
-#Tue Nov 01 20:53:35 BRST 2016
+#Tue Nov 01 22:55:57 BRST 2016
 base.0=/home/jonathan/Desktop/vcash_android/app/build/intermediates/transforms/dex/debug/folders/1000/1f/main
 renamed.0=classes.dex
 file.0=/home/jonathan/Desktop/vcash_android/app/build/intermediates/transforms/dex/debug/folders/1000/1f/main/classes.dex

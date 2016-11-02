@@ -10,7 +10,38 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2c800d4b-4b0f-4957-b818-f66acf481754" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.14.1/taskArtifacts/cache.properties.lock" afterPath="$PROJECT_DIR$/.gradle/2.14.1/taskArtifacts/cache.properties.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.14.1/taskArtifacts/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/2.14.1/taskArtifacts/fileHashes.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.14.1/taskArtifacts/fileSnapshots.bin" afterPath="$PROJECT_DIR$/.gradle/2.14.1/taskArtifacts/fileSnapshots.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.14.1/taskArtifacts/fileSnapshotsToTreeSnapshotsIndex.bin" afterPath="$PROJECT_DIR$/.gradle/2.14.1/taskArtifacts/fileSnapshotsToTreeSnapshotsIndex.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.14.1/taskArtifacts/taskArtifacts.bin" afterPath="$PROJECT_DIR$/.gradle/2.14.1/taskArtifacts/taskArtifacts.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.14.1/tasks/_app_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.bin" afterPath="$PROJECT_DIR$/.gradle/2.14.1/tasks/_app_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.14.1/tasks/_app_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.lock" afterPath="$PROJECT_DIR$/.gradle/2.14.1/tasks/_app_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.14.1/tasks/_app_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.bin" afterPath="$PROJECT_DIR$/.gradle/2.14.1/tasks/_app_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.14.1/tasks/_app_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.lock" afterPath="$PROJECT_DIR$/.gradle/2.14.1/tasks/_app_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/altcoin/br/vcash/adapter/AdapterWallets$atParseSummaryData.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/altcoin/br/vcash/adapter/AdapterWallets$atParseSummaryData.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/altcoin/br/vcash/data/CreateDatabase.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/altcoin/br/vcash/data/CreateDatabase.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/altcoin/br/vcash/model/Wallet.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/altcoin/br/vcash/model/Wallet.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/altcoin/br/vcash/services/BalanceChangesService$mainTask$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/altcoin/br/vcash/services/BalanceChangesService$mainTask$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/altcoin/br/vcash/services/BalanceChangesService$mainTask.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/altcoin/br/vcash/services/BalanceChangesService$mainTask.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/altcoin/br/vcash/services/BalanceChangesService.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/altcoin/br/vcash/services/BalanceChangesService.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/packageDebug/zip-cache/31wq9whYt5Ko0uUrA68cbiGiOFI=" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/packageDebug/zip-cache/31wq9whYt5Ko0uUrA68cbiGiOFI=" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/pre-dexed/debug/debug_8c6d6ca631adffbea0f870a95716ae016cfabd87.jar" afterPath="$PROJECT_DIR$/app/build/intermediates/pre-dexed/debug/debug_8c6d6ca631adffbea0f870a95716ae016cfabd87.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/resources-debug.ap_" afterPath="$PROJECT_DIR$/app/build/intermediates/res/resources-debug.ap_" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dex/debug/folders/1000/1f/main/classes.dex" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dex/debug/folders/1000/1f/main/classes.dex" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/outputs/apk/app-debug.apk" afterPath="$PROJECT_DIR$/app/build/outputs/apk/app-debug.apk" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/generated/fabric/res/debug/values/com_crashlytics_build_id.xml" afterPath="$PROJECT_DIR$/app/build/generated/fabric/res/debug/values/com_crashlytics_build_id.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/assets/debug/crashlytics-build.properties" afterPath="$PROJECT_DIR$/app/build/intermediates/assets/debug/crashlytics-build.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/compile-file-map.properties" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/compile-file-map.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values/values.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values/values.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merger.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merger.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/packageDebug/dex-renamer-state.txt" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/packageDebug/dex-renamer-state.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/values/values.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/values/values.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/altcoin/br/vcash/adapter/AdapterWallets.java" afterPath="$PROJECT_DIR$/app/src/main/java/altcoin/br/vcash/adapter/AdapterWallets.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/altcoin/br/vcash/data/CreateDatabase.java" afterPath="$PROJECT_DIR$/app/src/main/java/altcoin/br/vcash/data/CreateDatabase.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/altcoin/br/vcash/model/Wallet.java" afterPath="$PROJECT_DIR$/app/src/main/java/altcoin/br/vcash/model/Wallet.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/altcoin/br/vcash/services/BalanceChangesService.java" afterPath="$PROJECT_DIR$/app/src/main/java/altcoin/br/vcash/services/BalanceChangesService.java" />
     </list>
     <ignored path="vcash_android.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -43,12 +74,16 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="AdapterWallets.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/altcoin/br/vcash/adapter/AdapterWallets.java">
+      <file leaf-file-name="BalanceChangesService.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/altcoin/br/vcash/services/BalanceChangesService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-52">
-              <caret line="78" column="21" selection-start-line="78" selection-start-column="21" selection-end-line="78" selection-end-column="21" />
-              <folding />
+            <state relative-caret-position="-34">
+              <caret line="60" column="55" selection-start-line="60" selection-start-column="55" selection-end-line="60" selection-end-column="55" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#2091#2969#0" expanded="true" />
+                <element signature="e#2968#2969#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -56,9 +91,12 @@
       <file leaf-file-name="Wallet.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/altcoin/br/vcash/model/Wallet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="20" column="27" selection-start-line="20" selection-start-column="27" selection-end-line="20" selection-end-column="27" />
-              <folding />
+            <state relative-caret-position="-156">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding>
+                <element signature="e#2110#2111#0" expanded="true" />
+                <element signature="e#2140#2141#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -66,8 +104,8 @@
       <file leaf-file-name="WalletsActivity.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/altcoin/br/vcash/WalletsActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-112">
-              <caret line="88" column="67" selection-start-line="88" selection-start-column="67" selection-end-line="88" selection-end-column="67" />
+            <state relative-caret-position="551">
+              <caret line="117" column="0" selection-start-line="117" selection-start-column="0" selection-end-line="117" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#2711#3357#0" expanded="true" />
@@ -77,52 +115,33 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BalanceChangesService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/altcoin/br/vcash/services/BalanceChangesService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="73" column="67" selection-start-line="73" selection-start-column="67" selection-end-line="73" selection-end-column="67" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#2791#2792#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MainActivity.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/altcoin/br/vcash/MainActivity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="74" column="27" selection-start-line="74" selection-start-column="27" selection-end-line="74" selection-end-column="27" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="CreateDatabase.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/altcoin/br/vcash/data/CreateDatabase.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="377">
-              <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+            <state relative-caret-position="304">
+              <caret line="36" column="21" selection-start-line="36" selection-start-column="21" selection-end-line="36" selection-end-column="21" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/README.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
-            <state split_layout="FIRST">
-              <first_editor relative-caret-position="286">
-                <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-                <folding />
-              </first_editor>
-              <second_editor />
+      <file leaf-file-name="DBTools.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/altcoin/br/vcash/data/DBTools.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="73">
+              <caret line="63" column="31" selection-start-line="63" selection-start-column="31" selection-end-line="63" selection-end-column="31" />
+              <folding />
             </state>
           </provider>
-          <provider editor-type-id="MarkdownFxPreviewEditor">
-            <state />
+        </entry>
+      </file>
+      <file leaf-file-name="AdapterWallets.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/altcoin/br/vcash/adapter/AdapterWallets.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="44">
+              <caret line="81" column="45" selection-start-line="81" selection-start-column="45" selection-end-line="81" selection-end-column="45" />
+              <folding />
+            </state>
           </provider>
         </entry>
       </file>
@@ -1941,14 +1960,14 @@
         <option value="$PROJECT_DIR$/app/src/main/java/altcoin/br/vcash/data/DBTools.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_wallets.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/altcoin/br/vcash/utils/Utils.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/altcoin/br/vcash/adapter/AdapterWallets.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/altcoin/br/vcash/data/CreateDatabase.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/altcoin/br/vcash/model/Wallet.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/altcoin/br/vcash/WalletsActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/altcoin/br/vcash/MainActivity.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/altcoin/br/vcash/services/BalanceChangesService.java" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/app/src/main/java/altcoin/br/vcash/adapter/AdapterWallets.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/altcoin/br/vcash/model/Wallet.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/altcoin/br/vcash/data/CreateDatabase.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/altcoin/br/vcash/services/BalanceChangesService.java" />
       </list>
     </option>
   </component>
@@ -2329,12 +2348,12 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="1366" y="0" width="1440" height="900" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.41842106" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Android Monitor" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.54605263" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -2646,20 +2665,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/altcoin/br/vcash/data/DBTools.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="21" column="46" selection-start-line="21" selection-start-column="46" selection-end-line="21" selection-end-column="46" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#894#895#0" expanded="false" />
-            <element signature="e#941#942#0" expanded="false" />
-            <element signature="e#5871#5872#0" expanded="false" />
-            <element signature="e#5904#5905#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/box_margin.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="65">
@@ -2706,14 +2711,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/altcoin/br/vcash/data/CreateDatabase.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="377">
-          <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="205">
@@ -2725,53 +2722,6 @@
       </provider>
       <provider editor-type-id="android-manifest">
         <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/altcoin/br/vcash/MainActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="74" column="27" selection-start-line="74" selection-start-column="27" selection-end-line="74" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/altcoin/br/vcash/WalletsActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-112">
-          <caret line="88" column="67" selection-start-line="88" selection-start-column="67" selection-end-line="88" selection-end-column="67" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2711#3357#0" expanded="true" />
-            <element signature="e#3356#3357#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/altcoin/br/vcash/adapter/AdapterWallets.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-52">
-          <caret line="78" column="21" selection-start-line="78" selection-start-column="21" selection-end-line="78" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/altcoin/br/vcash/model/Wallet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="20" column="27" selection-start-line="20" selection-start-column="27" selection-end-line="20" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/altcoin/br/vcash/services/BalanceChangesService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="73" column="67" selection-start-line="73" selection-start-column="67" selection-end-line="73" selection-end-column="67" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2791#2792#0" expanded="true" />
-          </folding>
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
@@ -2792,6 +2742,73 @@
       </provider>
       <provider editor-type-id="MarkdownFxPreviewEditor">
         <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/altcoin/br/vcash/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="74" column="27" selection-start-line="74" selection-start-column="27" selection-end-line="74" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/altcoin/br/vcash/adapter/AdapterWallets.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="81" column="45" selection-start-line="81" selection-start-column="45" selection-end-line="81" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/altcoin/br/vcash/data/DBTools.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="73">
+          <caret line="63" column="31" selection-start-line="63" selection-start-column="31" selection-end-line="63" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/altcoin/br/vcash/data/CreateDatabase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="36" column="21" selection-start-line="36" selection-start-column="21" selection-end-line="36" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/altcoin/br/vcash/WalletsActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="551">
+          <caret line="117" column="0" selection-start-line="117" selection-start-column="0" selection-end-line="117" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2711#3357#0" expanded="true" />
+            <element signature="e#3356#3357#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/altcoin/br/vcash/model/Wallet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-156">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#2110#2111#0" expanded="true" />
+            <element signature="e#2140#2141#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/altcoin/br/vcash/services/BalanceChangesService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-34">
+          <caret line="60" column="55" selection-start-line="60" selection-start-column="55" selection-end-line="60" selection-end-column="55" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2091#2969#0" expanded="true" />
+            <element signature="e#2968#2969#0" expanded="true" />
+          </folding>
+        </state>
       </provider>
     </entry>
   </component>
