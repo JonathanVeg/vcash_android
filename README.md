@@ -22,6 +22,8 @@ https://coinmarketcap.com
 
 https://www.blockexperts.com/xvc
 
+https://blinktrade.com/
+
 ### Tech
 
 This app was made using Android Studio and Java (Android native application).
