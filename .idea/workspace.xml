@@ -10,7 +10,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2c800d4b-4b0f-4957-b818-f66acf481754" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
     </list>
     <ignored path="vcash_android.iws" />
@@ -115,8 +114,8 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
             <state split_layout="FIRST">
-              <first_editor relative-caret-position="182">
-                <caret line="14" column="42" selection-start-line="14" selection-start-column="42" selection-end-line="14" selection-end-column="42" />
+              <first_editor relative-caret-position="286">
+                <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -1990,7 +1989,7 @@
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="last_opened_file_path" value="$APPLICATION_HOME_DIR$/bin/vcash_android" />
     <property name="SearchEverywhereHistoryKey" value="create&#9;FILE&#9;file:///home/jonathan/Desktop/vcash_android/app/src/main/java/altcoin/br/vcash/data/CreateDatabase.java&#10;build&#9;FILE&#9;file:///home/jonathan/Desktop/vcash_android/app/build.gradle&#10;mani&#9;FILE&#9;file:///home/jonathan/Desktop/vcash_android/app/src/main/AndroidManifest.xml&#10;wid&#9;FILE&#9;file:///home/jonathan/Desktop/vcash_android/app/src/main/java/altcoin/br/vcash/widget/CoinWidgetProvider.java&#10;manifest&#9;FILE&#9;file:///home/jonathan/Desktop/vcash_android/app/src/main/AndroidManifest.xml&#10;summ&#9;FILE&#9;file:///home/jonathan/Desktop/vcash_android/app/src/main/res/layout/summary.xml&#10;acm&#9;FILE&#9;file:///home/jonathan/Desktop/vcash_android/app/src/main/res/layout-land/activity_main.xml&#10;mainac&#9;FILE&#9;file:///home/jonathan/Desktop/vcash_android/app/src/main/java/altcoin/br/vcash/MainActivity.java&#10;coin&#9;FILE&#9;file:///home/jonathan/Desktop/vcash_android/app/src/main/java/altcoin/br/vcash/widget/CoinWidgetProvider.java&#10;color&#9;FILE&#9;file:///home/jonathan/Desktop/vcash_android/app/src/main/res/values/colors.xml&#10;uti&#9;FILE&#9;file:///home/jonathan/Desktop/vcash_android/app/src/main/java/altcoin/br/vcash/utils/Utils.java&#10;internet&#9;FILE&#9;file:///home/jonathan/Desktop/vcash_android/app/src/main/java/altcoin/br/vcash/utils/InternetRequests.java&#10;mya&#9;FILE&#9;file:///home/jonathan/Desktop/vcash_android/app/src/main/java/altcoin/br/vcash/application/MyApplication.java&#10;bu&#9;FILE&#9;file:///home/jonathan/Desktop/vcash_android/app/build.gradle&#10;gradle&#9;FILE&#9;file:///home/jonathan/Desktop/vcash_android/app/build.gradle&#10;androidma&#9;FILE&#9;file:///home/jonathan/Desktop/vcash_android/app/src/main/AndroidManifest.xml&#10;maina&#9;FILE&#9;file:///home/jonathan/Desktop/vcash_android/app/src/main/java/altcoin/br/vcash/MainActivity.java&#10;bui&#9;FILE&#9;file:///home/jonathan/Desktop/vcash_android/app/build.gradle&#10;util&#9;FILE&#9;file:///home/jonathan/Desktop/vcash_android/app/src/main/java/altcoin/br/vcash/application/Utils.java&#10;build.g&#9;FILE&#9;file:///home/jonathan/Desktop/vcash_android/app/build.gradle&#10;colors&#9;FILE&#9;file:///home/jonathan/Desktop/vcash_android/app/src/main/res/values/colors.xml" />
-    <property name="device.picker.selection" value="192.168.34.102:5555" />
+    <property name="device.picker.selection" value="Nexus_7_API_24" />
     <property name="UI_DESIGNER_EDITOR_MODE.NlPaletteManager-NlPreviewForm.SHOW" value="false" />
     <property name="ExportApk.ApkPath" value="$PROJECT_DIR$/app" />
     <property name="ExportApk.Flavors" value="" />
@@ -2778,8 +2777,8 @@
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="FIRST">
-          <first_editor relative-caret-position="182">
-            <caret line="14" column="42" selection-start-line="14" selection-start-column="42" selection-end-line="14" selection-end-column="42" />
+          <first_editor relative-caret-position="286">
+            <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
             <folding />
           </first_editor>
           <second_editor />
