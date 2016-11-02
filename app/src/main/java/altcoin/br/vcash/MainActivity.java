@@ -26,6 +26,7 @@ import com.github.mikephil.charting.components.YAxis;
 import com.github.mikephil.charting.data.CandleData;
 import com.github.mikephil.charting.data.CandleDataSet;
 import com.github.mikephil.charting.data.CandleEntry;
+import com.koushikdutta.async.Util;
 
 import org.json.JSONArray;
 import org.json.JSONObject;
@@ -35,6 +36,7 @@ import java.util.Iterator;
 import java.util.List;
 
 import altcoin.br.vcash.services.BalanceChangesService;
+import altcoin.br.vcash.utils.Bitcoin;
 import altcoin.br.vcash.utils.InternetRequests;
 import altcoin.br.vcash.utils.Utils;
 
@@ -635,14 +637,15 @@ public class MainActivity extends AppCompatActivity {
         protected void onPostExecute(Void aVoid) {
             super.onPostExecute(aVoid);
 
-            TextView tvSummaryUsdPrice = (TextView) findViewById(R.id.tvSummaryUsdPrice);
             TextView tvSummaryBtcPrice = (TextView) findViewById(R.id.tvSummaryBtcPrice);
+            TextView tvSummaryUsdPrice = (TextView) findViewById(R.id.tvSummaryUsdPrice);
+            final TextView tvSummaryBrlPrice = (TextView) findViewById(R.id.tvSummaryBrlPrice);
             TextView tvSummaryUsd24hVolume = (TextView) findViewById(R.id.tvSummaryUsd24hVolume);
             TextView tvSummaryUsdMarketCap = (TextView) findViewById(R.id.tvSummaryUsdMarketCap);
             TextView tvSummary24hChanges = (TextView) findViewById(R.id.tvSummary24hChanges);
 
-            tvSummaryUsdPrice.setText(usdPrice);
             tvSummaryBtcPrice.setText(btcPrice);
+            tvSummaryUsdPrice.setText(usdPrice);
             tvSummaryUsd24hVolume.setText(usdVolume24h);
             tvSummaryUsdMarketCap.setText(usdMarketCap);
             tvSummary24hChanges.setText(String.format("%s%%", p24hChanges));
@@ -651,6 +654,22 @@ public class MainActivity extends AppCompatActivity {
                 tvSummary24hChanges.setTextColor(ContextCompat.getColor(MainActivity.this, R.color.colorChangesUp));
             else
                 tvSummary24hChanges.setTextColor(ContextCompat.getColor(MainActivity.this, R.color.colorChangesDown));
+
+
+            Response.Listener<String> listener = new Response.Listener<String>() {
+                @Override
+                public void onResponse(String response) {
+                    try {
+                        JSONObject obj = new JSONObject(response);
+
+                        tvSummaryBrlPrice.setText(Utils.numberComplete(Double.parseDouble(btcPrice) * obj.getDouble("last"), 4));
+                    } catch (Exception e) {
+                        e.printStackTrace();
+                    }
+                }
+            };
+
+            Bitcoin.convertBtcToUsd(listener);
 
             tvLastUpdate.setText(Utils.now());
         }

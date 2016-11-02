@@ -3,6 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_marginBottom="16dp"
     android:orientation="vertical">
 
     <LinearLayout
@@ -88,12 +89,11 @@
                 android:layout_marginTop="5dp"
                 android:layout_toEndOf="@id/etValueToConvertXvc"
                 android:layout_toRightOf="@id/etValueToConvertXvc"
-                android:orientation="horizontal">
+                android:orientation="vertical">
 
                 <LinearLayout
-                    android:layout_width="0dp"
+                    android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_weight="1"
                     android:orientation="horizontal">
 
                     <TextView
@@ -112,9 +112,8 @@
                 </LinearLayout>
 
                 <LinearLayout
-                    android:layout_width="0dp"
+                    android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_weight="1"
                     android:orientation="horizontal">
 
                     <TextView
@@ -126,6 +125,26 @@
 
                     <TextView
                         android:id="@+id/tvCalcXvcInUsd"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:gravity="center"
+                        android:text="0" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:gravity="center"
+                        android:text="BRL: "
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tvCalcXvcInBrl"
                         android:layout_width="wrap_content"
                         android:layout_height="30dp"
                         android:gravity="center"
@@ -280,6 +299,77 @@
             </LinearLayout>
         </RelativeLayout>
 
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@layout/box_margin"
+            android:minHeight="80dp">
+
+            <Button
+                android:id="@+id/bConvertBrlTo"
+                android:layout_width="100dp"
+                android:layout_height="45dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="false"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/button_style"
+                android:text="Convert"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/etValueToConvertBrl"
+                android:layout_width="fill_parent"
+                android:layout_height="45dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="25dp"
+                android:layout_toLeftOf="@+id/bConvertBrlTo"
+                android:ems="10"
+                android:hint="0.0"
+                android:inputType="numberDecimal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:text="Value in BRL"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/etValueToConvertBrl"
+                android:layout_alignStart="@id/etValueToConvertBrl"
+                android:layout_below="@id/etValueToConvertBrl"
+                android:layout_marginTop="5dp"
+                android:layout_toEndOf="@id/etValueToConvertBrl"
+                android:layout_toRightOf="@id/etValueToConvertBrl"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:gravity="center"
+                    android:text="XVC: "
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvCalcBrlInXvc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:gravity="center"
+                    android:text="0" />
+
+            </LinearLayout>
+        </RelativeLayout>
 
     </LinearLayout>
 </ScrollView>

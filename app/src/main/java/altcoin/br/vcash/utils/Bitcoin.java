@@ -1,0 +1,15 @@
+package altcoin.br.vcash.utils;
+
+import com.android.volley.Response;
+
+public class Bitcoin {
+
+    public static void convertBtcToUsd(Response.Listener<String> listener) {
+        InternetRequests internetRequests = new InternetRequests();
+
+        String url = "https://api.blinktrade.com/api/v1/BRL/ticker";
+
+        internetRequests.executeGet(url, listener);
+    }
+
+}
