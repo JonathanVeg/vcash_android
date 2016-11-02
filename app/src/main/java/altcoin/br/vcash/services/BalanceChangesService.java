@@ -37,12 +37,9 @@ public class BalanceChangesService extends Service {
     public void onCreate() {
         super.onCreate();
 
-        int minutes = 1;
+        int minutes = 15;
 
         timer.scheduleAtFixedRate(new mainTask(), 0, minutes * 60 * 1000);
-
-        // timer.scheduleAtFixedRate(new mainTask(), 0, 5 * 1000);
-
     }
 
     private class mainTask extends TimerTask {
