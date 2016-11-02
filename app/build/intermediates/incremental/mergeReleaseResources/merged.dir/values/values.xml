@@ -505,7 +505,7 @@
     <string name="appbar_scrolling_view_behavior" translatable="false">android.support.design.widget.AppBarLayout$ScrollingViewBehavior</string>
     <string name="bottom_sheet_behavior" translatable="false">android.support.design.widget.BottomSheetBehavior</string>
     <string name="character_counter_pattern" translatable="false">%1$d / %2$d</string>
-    <string name="com.crashlytics.android.build_id" ns1:ignore="UnusedResources,TypographyDashes" translatable="false">fa3fe8f7-33a6-494e-ae8d-853948f82265</string>
+    <string name="com.crashlytics.android.build_id" ns1:ignore="UnusedResources,TypographyDashes" translatable="false">a2c79871-561e-41ed-9d43-a5777e98ce84</string>
     <string name="status_bar_notification_info_overflow">999+</string>
     <string name="title_activity_calculator">Calculator</string>
     <string name="title_activity_wallets">Wallets</string>

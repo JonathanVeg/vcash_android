@@ -26,11 +26,11 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="USD price: "
+                android:text="BTC price: "
                 android:textStyle="bold" />
 
             <TextView
-                android:id="@+id/tvSummaryUsdPrice"
+                android:id="@+id/tvSummaryBtcPrice"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="0" />
@@ -44,11 +44,28 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="BTC price: "
+                android:text="USD price: "
                 android:textStyle="bold" />
 
             <TextView
-                android:id="@+id/tvSummaryBtcPrice"
+                android:id="@+id/tvSummaryUsdPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="BRL price: "
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvSummaryBrlPrice"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="0" />

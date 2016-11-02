@@ -655,7 +655,6 @@ public class MainActivity extends AppCompatActivity {
             else
                 tvSummary24hChanges.setTextColor(ContextCompat.getColor(MainActivity.this, R.color.colorChangesDown));
 
-
             Response.Listener<String> listener = new Response.Listener<String>() {
                 @Override
                 public void onResponse(String response) {
