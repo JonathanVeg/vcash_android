@@ -10,7 +10,13 @@ In this app we have:
 You can also:
   - Calculator, when you can convert XVC to BTC and USD and USD and BTC to XVC.
 
-You can contact me directly in my email: jonathan.jgs@gmail.com
+You can contact me directly: 
+
+jonathan.jgs@gmail.com
+
+www.twitter.com/JonathanVeg2
+
+www.fb.com/JonathanVeg
 
 All the data I get are from this websites:
 
