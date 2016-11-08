@@ -52,6 +52,10 @@
                 android:name="android.appwidget.provider"
                 android:resource="@xml/appwidget_provider_info" />
         </receiver>
+
+        <activity
+            android:name="altcoin.br.vcash.AboutActivity"
+            android:label="@string/title_activity_about" />
     </application>
 
 </manifest>

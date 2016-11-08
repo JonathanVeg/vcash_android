@@ -18,11 +18,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
         <activity
             android:name=".CalculatorActivity"
             android:label="@string/title_activity_calculator" />
-
         <activity
             android:name=".WalletsActivity"
             android:label="@string/title_activity_wallets" />
@@ -30,7 +28,6 @@
         <service
             android:name=".services.NotificationCoinService"
             android:enabled="true" />
-
         <service
             android:name=".services.BalanceChangesService"
             android:enabled="true" />
@@ -49,6 +46,10 @@
                 android:name="android.appwidget.provider"
                 android:resource="@xml/appwidget_provider_info" />
         </receiver>
+
+        <activity
+            android:name=".AboutActivity"
+            android:label="@string/title_activity_about" />
     </application>
 
 </manifest>

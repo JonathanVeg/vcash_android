@@ -14,4 +14,11 @@
         android:showAsAction="ifRoom"
         android:title="Wallets" />
 
+    <item
+        android:id="@+id/about"
+        android:icon="@drawable/ic_info_white_24dp"
+        android:showAsAction="ifRoom"
+        android:title="About"
+        android:visible="false" />
+
 </menu>

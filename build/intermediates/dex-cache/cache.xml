@@ -156,21 +156,21 @@
     </item>
     <item
         is-multidex="false"
-        jar="/home/jonathan/.gradle/caches/modules-2/files-2.1/com.mcxiaoke.volley/library/1.0.17/f417d7f776d1ee5858fc04d9362aa45e9bedd26b/library-1.0.17.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="24.0.0"
-        sha1="f417d7f776d1ee5858fc04d9362aa45e9bedd26b">
-        <dex dex="/home/jonathan/Desktop/vcash_android/app/build/intermediates/pre-dexed/debug/library-1.0.17_efc70dcb597adfd57d0f74ace9502c8f6afee88c.jar" />
-    </item>
-    <item
-        is-multidex="false"
         jar="/home/jonathan/Android/Sdk/extras/android/m2repository/com/android/support/support-annotations/24.0.0/support-annotations-24.0.0.jar"
         jumboMode="false"
         optimize="true"
         revision="24.0.0"
         sha1="2943c74db6d4346ab8c6531adac91fa05c137c40">
         <dex dex="/home/jonathan/Desktop/vcash_android/app/build/intermediates/pre-dexed/debug/support-annotations-24.0.0_651365d815cdfe0ee4791932f47fcae8ac180c30.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/jonathan/.gradle/caches/modules-2/files-2.1/com.mcxiaoke.volley/library/1.0.17/f417d7f776d1ee5858fc04d9362aa45e9bedd26b/library-1.0.17.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.0"
+        sha1="f417d7f776d1ee5858fc04d9362aa45e9bedd26b">
+        <dex dex="/home/jonathan/Desktop/vcash_android/app/build/intermediates/pre-dexed/debug/library-1.0.17_efc70dcb597adfd57d0f74ace9502c8f6afee88c.jar" />
     </item>
 
 </items>

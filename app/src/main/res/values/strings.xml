@@ -2,4 +2,5 @@
     <string name="app_name">Vcash</string>
     <string name="title_activity_calculator">Calculator</string>
     <string name="title_activity_wallets">Wallets</string>
+    <string name="title_activity_about">About</string>
 </resources>

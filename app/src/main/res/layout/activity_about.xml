@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingEnd="@dimen/activity_margin"
+        android:paddingStart="@dimen/activity_margin"
+        android:paddingTop="@dimen/activity_margin">
+
+        <LinearLayout
+            android:layout_width="0px"
+            android:layout_height="0px"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:contentDescription="XVC Logo"
+            app:srcCompat="@drawable/xvc_icon" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="8dp"
+            android:text="Source of values"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Official site: "
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvAboutVcash"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="v.cash" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Coin market cap: "
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvAboutCoinMarketCap"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="https://coinmarketcap.com/currencies/vcash/" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bittrex: "
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvAboutBittrex"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="https://bittrex.com/Market/Index?MarketName=BTC-XVC" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Poloniex: "
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvAboutPoloniex"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="https://poloniex.com/exchange#btc_xvc" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Blinktrade API (BRL prices): "
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvAboutBlinktrade"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="https://blinktrade.com/docs/?shell#public-rest-api" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="8dp"
+            android:text="Developer"
+            android:textStyle="bold" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="App made by Jonathan Silva"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvAboutTwitter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="https://twitter.com/JonathanVeg2" />
+
+            <TextView
+                android:id="@+id/tvAboutEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="https://twitter.com/JonathanVeg2" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>
