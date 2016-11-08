@@ -26,7 +26,6 @@ import com.github.mikephil.charting.components.YAxis;
 import com.github.mikephil.charting.data.CandleData;
 import com.github.mikephil.charting.data.CandleDataSet;
 import com.github.mikephil.charting.data.CandleEntry;
-import com.koushikdutta.async.Util;
 
 import org.json.JSONArray;
 import org.json.JSONObject;
@@ -668,7 +667,7 @@ public class MainActivity extends AppCompatActivity {
                 }
             };
 
-            Bitcoin.convertBtcToUsd(listener);
+            Bitcoin.convertBtcToBrl(listener);
 
             tvLastUpdate.setText(Utils.now());
         }

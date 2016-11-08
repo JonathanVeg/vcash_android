@@ -2509,7 +2509,7 @@ containing a value of this type.
         public static final int beginning=0x7f0c0033;
         public static final int bottom=0x7f0c0021;
         public static final int buttonPanel=0x7f0c0046;
-        public static final int calculator=0x7f0c00b7;
+        public static final int calculator=0x7f0c00b8;
         public static final int cancel_action=0x7f0c009a;
         public static final int cbAlertBalanceChanges=0x7f0c007f;
         public static final int cbShowValues=0x7f0c008d;
@@ -2637,7 +2637,7 @@ containing a value of this type.
         public static final int tvCalcXvcInBrl=0x7f0c0070;
         public static final int tvCalcXvcInBtc=0x7f0c006e;
         public static final int tvCalcXvcInUsd=0x7f0c006f;
-        public static final int tvCoinMarketCapTitle=0x7f0c00b0;
+        public static final int tvCoinMarketCapTitle=0x7f0c00b1;
         public static final int tvDonateWallet=0x7f0c007c;
         public static final int tvLastUpdate=0x7f0c007b;
         public static final int tvOficialSite=0x7f0c007a;
@@ -2647,14 +2647,15 @@ containing a value of this type.
         public static final int tvPoloniexChanges=0x7f0c00ab;
         public static final int tvPoloniexLast=0x7f0c00a7;
         public static final int tvPoloniexTitle=0x7f0c00a6;
-        public static final int tvSummary24hChanges=0x7f0c00b4;
-        public static final int tvSummaryBrlPrice=0x7f0c00b3;
-        public static final int tvSummaryBtcPrice=0x7f0c00b1;
-        public static final int tvSummaryUsd24hVolume=0x7f0c00b5;
-        public static final int tvSummaryUsdMarketCap=0x7f0c00b6;
-        public static final int tvSummaryUsdPrice=0x7f0c00b2;
+        public static final int tvSummary24hChanges=0x7f0c00b5;
+        public static final int tvSummaryBrlPrice=0x7f0c00b4;
+        public static final int tvSummaryBtcPrice=0x7f0c00b2;
+        public static final int tvSummaryUsd24hVolume=0x7f0c00b6;
+        public static final int tvSummaryUsdMarketCap=0x7f0c00b7;
+        public static final int tvSummaryUsdPrice=0x7f0c00b3;
         public static final int tvWalletsAddress=0x7f0c00ac;
         public static final int tvWalletsBalance=0x7f0c00ad;
+        public static final int tvWalletsBalanceInBrl=0x7f0c00b0;
         public static final int tvWalletsBalanceInBtc=0x7f0c00ae;
         public static final int tvWalletsBalanceInUsd=0x7f0c00af;
         public static final int tvWidNameCoin=0x7f0c0083;
@@ -2663,7 +2664,7 @@ containing a value of this type.
         public static final int up=0x7f0c0009;
         public static final int useLogo=0x7f0c0014;
         public static final int view_offset_helper=0x7f0c000a;
-        public static final int wallets=0x7f0c00b8;
+        public static final int wallets=0x7f0c00b9;
         public static final int withText=0x7f0c0039;
         public static final int wrap_content=0x7f0c0020;
     }

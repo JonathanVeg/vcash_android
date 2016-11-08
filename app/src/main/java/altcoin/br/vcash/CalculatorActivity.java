@@ -192,7 +192,7 @@ public class CalculatorActivity extends AppCompatActivity {
                         }
                     };
 
-                    Bitcoin.convertBtcToUsd(listener2);
+                    Bitcoin.convertBtcToBrl(listener2);
                 }
             }
         });
@@ -231,7 +231,7 @@ public class CalculatorActivity extends AppCompatActivity {
                                     }
                                 };
 
-                                Bitcoin.convertBtcToUsd(listener);
+                                Bitcoin.convertBtcToBrl(listener);
 
                             } catch (Exception e) {
                                 e.printStackTrace();

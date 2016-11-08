@@ -17,6 +17,7 @@ import java.util.List;
 
 import altcoin.br.vcash.R;
 import altcoin.br.vcash.model.Wallet;
+import altcoin.br.vcash.utils.Bitcoin;
 import altcoin.br.vcash.utils.InternetRequests;
 import altcoin.br.vcash.utils.Utils;
 
@@ -74,6 +75,7 @@ public class AdapterWallets extends RecyclerView.Adapter<RecyclerView.ViewHolder
         TextView tvWalletsBalance;
         TextView tvWalletsBalanceInBtc;
         TextView tvWalletsBalanceInUsd;
+        TextView tvWalletsBalanceInBrl;
 
         myViewHolder(View v) {
             super(v);
@@ -82,6 +84,7 @@ public class AdapterWallets extends RecyclerView.Adapter<RecyclerView.ViewHolder
             tvWalletsBalance = (TextView) v.findViewById(R.id.tvWalletsBalance);
             tvWalletsBalanceInBtc = (TextView) v.findViewById(R.id.tvWalletsBalanceInBtc);
             tvWalletsBalanceInUsd = (TextView) v.findViewById(R.id.tvWalletsBalanceInUsd);
+            tvWalletsBalanceInBrl = (TextView) v.findViewById(R.id.tvWalletsBalanceInBrl);
         }
     }
 
@@ -140,6 +143,7 @@ public class AdapterWallets extends RecyclerView.Adapter<RecyclerView.ViewHolder
                 JSONObject obj = new JSONArray(response).getJSONObject(0);
 
                 usdPrice = obj.getDouble("price_usd");
+
                 btcPrice = obj.getDouble("price_btc");
 
             } catch (Exception e) {
@@ -156,6 +160,30 @@ public class AdapterWallets extends RecyclerView.Adapter<RecyclerView.ViewHolder
             h.tvWalletsBalanceInBtc.setText(Utils.numberComplete(Double.parseDouble(wallet.getBalance()) * btcPrice, 8));
 
             h.tvWalletsBalanceInUsd.setText(Utils.numberComplete(Double.parseDouble(wallet.getBalance()) * usdPrice, 4));
+
+            calcBrlPrice(h, Double.parseDouble(wallet.getBalance()) * btcPrice);
         }
+    }
+
+    private void calcBrlPrice(final myViewHolder h, final double btcPrice) {
+        Response.Listener<String> listener = new Response.Listener<String>() {
+            @Override
+            public void onResponse(String response) {
+                try {
+                    JSONObject obj = new JSONObject(response);
+
+                    Utils.log("::: " + btcPrice + " " + obj.getDouble("last"));
+
+                    h.tvWalletsBalanceInBrl.setText(Utils.numberComplete(btcPrice * obj.getDouble("last"), 4));
+                } catch (Exception e) {
+
+                    h.tvWalletsBalanceInBrl.setText("...");
+
+                    e.printStackTrace();
+                }
+            }
+        };
+
+        Bitcoin.convertBtcToBrl(listener);
     }
 }
