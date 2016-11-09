@@ -4,7 +4,7 @@ This app is for helping the XVC users track Vcash prices.
 
 In this app we have:
   - Coin Market Cap Infos: USD and BTC prices, 24h volume and % changes and USD market cap.
-  - Bittrex and Poloniex Infos: Last prica, volume in BTC, Bid, Ask and % changes.
+  - Bittrex and Poloniex Infos: Last price, volume in BTC, Bid, Ask and % changes.
   - Poloniex chart 
 
 You can also:

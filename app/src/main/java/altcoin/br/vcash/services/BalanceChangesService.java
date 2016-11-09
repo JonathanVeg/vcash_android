@@ -184,7 +184,7 @@ public class BalanceChangesService extends Service {
         notificationManager.notify(id, notification);
     }
 
-    int hash(String name) {
+    private int hash(String name) {
         String s = name.replaceAll(" ", "");
 
         int h = 0;

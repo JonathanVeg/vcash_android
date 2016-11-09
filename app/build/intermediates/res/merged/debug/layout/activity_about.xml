@@ -48,7 +48,6 @@
             android:textStyle="bold" />
 
         <LinearLayout
-            android:id="@+id/llVerticalLine"
             android:layout_width="300dp"
             android:layout_height="2dp"
             android:layout_below="@+id/rlAboutLogo"

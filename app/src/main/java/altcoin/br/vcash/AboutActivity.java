@@ -7,14 +7,14 @@ import android.widget.TextView;
 import altcoin.br.vcash.utils.Utils;
 
 public class AboutActivity extends AppCompatActivity {
-    TextView tvAboutDeveloper;
-    TextView tvAboutCode;
-    TextView tvAboutVcash;
-    TextView tvAboutCoinMarketCap;
-    TextView tvAboutBittrex;
-    TextView tvAboutPoloniex;
-    TextView tvAboutBlinktrade;
-    TextView tvAboutBlockexperts;
+    private TextView tvAboutDeveloper;
+    private TextView tvAboutCode;
+    private TextView tvAboutVcash;
+    private TextView tvAboutCoinMarketCap;
+    private TextView tvAboutBittrex;
+    private TextView tvAboutPoloniex;
+    private TextView tvAboutBlinktrade;
+    private TextView tvAboutBlockexperts;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,7 +24,7 @@ public class AboutActivity extends AppCompatActivity {
         instanceObjects();
     }
 
-    void instanceObjects() {
+    private void instanceObjects() {
         tvAboutDeveloper = (TextView) findViewById(R.id.tvAboutDeveloper);
         tvAboutCode = (TextView) findViewById(R.id.tvAboutCode);
 

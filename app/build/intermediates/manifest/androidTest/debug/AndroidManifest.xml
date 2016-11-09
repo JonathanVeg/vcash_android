@@ -8,7 +8,7 @@
         <uses-library android:name="android.test.runner" />
     </application>
 
-    <instrumentation android:name="android.support.test.runner.AndroidJUnitRunner"
+    <instrumentation android:name="android.test.InstrumentationTestRunner"
                      android:targetPackage="altcoin.br.vcash"
                      android:handleProfiling="false"
                      android:functionalTest="false"
