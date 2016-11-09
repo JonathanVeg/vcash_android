@@ -67,7 +67,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         if (getActionBar() != null) {
-            getActionBar().setDisplayShowHomeEnabled(false);
+            getActionBar().setDisplayShowHomeEnabled(true);
             getActionBar().setTitle("Vcash");
         }
 

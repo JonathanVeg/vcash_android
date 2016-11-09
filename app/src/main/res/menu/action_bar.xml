@@ -19,6 +19,6 @@
         android:icon="@drawable/ic_info_white_24dp"
         android:showAsAction="ifRoom"
         android:title="About"
-        android:visible="false" />
+        android:visible="true" />
 
 </menu>

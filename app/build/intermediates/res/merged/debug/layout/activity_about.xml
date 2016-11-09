@@ -27,6 +27,38 @@
             android:contentDescription="XVC Logo"
             app:srcCompat="@drawable/xvc_icon" />
 
+
+        <TextView
+            android:id="@+id/tvAboutDeveloper"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:text="App developed by Jonathan Silva"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvAboutCode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="(Source Code)"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/llVerticalLine"
+            android:layout_width="300dp"
+            android:layout_height="2dp"
+            android:layout_below="@+id/rlAboutLogo"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:background="#000000"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" />
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -51,7 +83,7 @@
                 android:id="@+id/tvAboutVcash"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="v.cash" />
+                android:text="https://v.cash" />
 
         </LinearLayout>
 
@@ -64,7 +96,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Coin market cap: "
+                android:text="Coin Market Cap: "
                 android:textStyle="bold" />
 
             <TextView
@@ -134,16 +166,6 @@
                 android:text="https://blinktrade.com/docs/?shell#public-rest-api" />
 
         </LinearLayout>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:padding="8dp"
-            android:text="Developer"
-            android:textStyle="bold" />
-
-
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -153,22 +175,15 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="App made by Jonathan Silva"
+                android:text="Blockexperts: "
                 android:textStyle="bold" />
 
             <TextView
-                android:id="@+id/tvAboutTwitter"
+                android:id="@+id/tvAboutBlockexperts"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="https://twitter.com/JonathanVeg2" />
-
-            <TextView
-                android:id="@+id/tvAboutEmail"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="https://twitter.com/JonathanVeg2" />
+                android:text="https://www.blockexperts.com/xvc/" />
 
         </LinearLayout>
     </LinearLayout>
-
 </ScrollView>
