@@ -79,7 +79,7 @@ public class MainActivity extends AppCompatActivity {
             getActionBar().setTitle("Vcash");
         }
 
-        intanceObjects();
+        instanceObjects();
 
         prepareListeners();
 
@@ -202,6 +202,7 @@ public class MainActivity extends AppCompatActivity {
 
         ArrayList<Entry> entriesBid;
         ArrayList<Entry> entriesAsk;
+
         ArrayList<String> labelsBid;
         ArrayList<String> labelsAsk;
 
@@ -210,6 +211,7 @@ public class MainActivity extends AppCompatActivity {
 
             entriesBid = new ArrayList<>();
             entriesAsk = new ArrayList<>();
+
             labelsBid = new ArrayList<>();
             labelsAsk = new ArrayList<>();
         }
@@ -228,22 +230,6 @@ public class MainActivity extends AppCompatActivity {
 
                     if (jObject.get(key) instanceof JSONArray) {
 
-                        if (key.equals("asks")) {
-                            internal = jObject.getJSONArray(key);
-
-                            double totalBid = 0;
-
-                            for (int i = 0; i < internal.length(); i++) {
-                                JSONArray item = internal.getJSONArray(i);
-
-                                totalBid += item.getDouble(0) * item.getDouble(1);
-
-                                entriesAsk.add(new Entry((float) totalBid, i));
-
-                                labelsAsk.add(item.getString(0));
-                            }
-                        }
-
                         if (key.equals("bids")) {
                             internal = jObject.getJSONArray(key);
 
@@ -255,12 +241,23 @@ public class MainActivity extends AppCompatActivity {
                                 totalAsk += item.getDouble(0) * item.getDouble(1);
 
                                 entriesBid.add(new Entry((float) totalAsk, i));
-
                                 labelsBid.add(item.getString(0));
                             }
+                        }
 
-                            Collections.reverse(entriesBid);
-                            Collections.reverse(labelsBid);
+                        if (key.equals("asks")) {
+                            internal = jObject.getJSONArray(key);
+
+                            double totalBid = 0;
+
+                            for (int i = 0; i < internal.length(); i++) {
+                                JSONArray item = internal.getJSONArray(i);
+
+                                totalBid += item.getDouble(0) * item.getDouble(1);
+
+                                entriesAsk.add(new Entry((float) totalBid, i));
+                                labelsAsk.add(item.getString(0));
+                            }
                         }
                     }
                 }
@@ -277,17 +274,27 @@ public class MainActivity extends AppCompatActivity {
 
             // bid
 
-            LineDataSet dataset = new LineDataSet(entriesBid, "o");
+            // invert the data
+            for (int i = 0; i < entriesBid.size(); i++)
+                entriesBid.get(i).setXIndex(entriesBid.size() - 1 - i);
 
-            dataset.setColor(0xFF0000);
+            Collections.reverse(labelsBid);
 
-            dataset.setDrawFilled(true);
+            LineDataSet datasetBid = new LineDataSet(entriesBid, "Bids");
 
-            LineData lineData = new LineData(labelsBid, dataset);
+            datasetBid.setColor(0xFF00FF00);
 
-            Utils.log("" + dataset);
+            datasetBid.setDrawValues(false);
 
-            marketChartBid.setData(lineData);
+            datasetBid.setFillColor(0xFF00FF00);
+
+            datasetBid.setDrawCircles(false);
+
+            datasetBid.setDrawFilled(true);
+
+            LineData lineDataBid = new LineData(labelsBid, datasetBid);
+
+            marketChartBid.setData(lineDataBid);
 
             marketChartBid.getAxisRight().setDrawLabels(false);
 
@@ -299,15 +306,19 @@ public class MainActivity extends AppCompatActivity {
 
             // ask
 
-            LineDataSet datasetAsk = new LineDataSet(entriesAsk, "o");
+            LineDataSet datasetAsk = new LineDataSet(entriesAsk, "Asks");
 
-            datasetAsk.setColor(0x00FF00);
+            datasetAsk.setColor(0xFFFF0000);
+
+            datasetAsk.setDrawValues(false);
+
+            datasetAsk.setFillColor(0xFFFF0000);
+
+            datasetAsk.setDrawCircles(false);
 
             datasetAsk.setDrawFilled(true);
 
             LineData lineDataAsk = new LineData(labelsAsk, datasetAsk);
-
-            Utils.log("" + datasetAsk);
 
             marketChartAsk.setData(lineDataAsk);
 
@@ -403,7 +414,7 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-    private void intanceObjects() {
+    private void instanceObjects() {
         tvLastUpdate = (TextView) findViewById(R.id.tvLastUpdate);
 
         TextView tvOficialSite = (TextView) findViewById(R.id.tvOficialSite);
