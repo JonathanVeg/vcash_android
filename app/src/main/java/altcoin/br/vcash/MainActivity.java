@@ -22,15 +22,20 @@ import android.widget.Toast;
 
 import com.android.volley.Response;
 import com.github.mikephil.charting.charts.CandleStickChart;
+import com.github.mikephil.charting.charts.LineChart;
 import com.github.mikephil.charting.components.YAxis;
 import com.github.mikephil.charting.data.CandleData;
 import com.github.mikephil.charting.data.CandleDataSet;
 import com.github.mikephil.charting.data.CandleEntry;
+import com.github.mikephil.charting.data.Entry;
+import com.github.mikephil.charting.data.LineData;
+import com.github.mikephil.charting.data.LineDataSet;
 
 import org.json.JSONArray;
 import org.json.JSONObject;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.Iterator;
 import java.util.List;
 
@@ -58,6 +63,9 @@ public class MainActivity extends AppCompatActivity {
 
     private CandleStickChart coinChart;
 
+    private LineChart marketChartBid;
+    private LineChart marketChartAsk;
+
     private ArrayAdapter<String> adapterZoom;
     private ArrayAdapter<String> adapterCandle;
 
@@ -82,6 +90,8 @@ public class MainActivity extends AppCompatActivity {
         loadPoloniexData();
 
         loadChart();
+
+        loadMarketChart();
 
         startService(new Intent(this, BalanceChangesService.class));
     }
@@ -133,6 +143,8 @@ public class MainActivity extends AppCompatActivity {
 
             loadChart();
 
+            loadMarketChart();
+
             // after executing it creates another instance
             // i think there is a way to make it better.
             handler = new Handler();
@@ -168,6 +180,144 @@ public class MainActivity extends AppCompatActivity {
 
             default:
                 return super.onOptionsItemSelected(item);
+        }
+    }
+
+    private void loadMarketChart() {
+        String url = "https://poloniex.com/public?command=returnOrderBook&currencyPair=BTC_XVC&depth=500";
+
+        Response.Listener<String> listener = new Response.Listener<String>() {
+            @Override
+            public void onResponse(String response) {
+                new atParseMarketChart(response).execute();
+            }
+        };
+
+        InternetRequests internetRequests = new InternetRequests();
+        internetRequests.executePost(url, listener);
+    }
+
+    private class atParseMarketChart extends AsyncTask<Void, Void, Void> {
+        String response;
+
+        ArrayList<Entry> entriesBid;
+        ArrayList<Entry> entriesAsk;
+        ArrayList<String> labelsBid;
+        ArrayList<String> labelsAsk;
+
+        atParseMarketChart(String response) {
+            this.response = response;
+
+            entriesBid = new ArrayList<>();
+            entriesAsk = new ArrayList<>();
+            labelsBid = new ArrayList<>();
+            labelsAsk = new ArrayList<>();
+        }
+
+        @Override
+        protected Void doInBackground(Void... voids) {
+            try {
+                JSONObject jObject = new JSONObject(response);
+
+                Iterator<?> keys = jObject.keys();
+
+                JSONArray internal;
+
+                while (keys.hasNext()) {
+                    String key = (String) keys.next();
+
+                    if (jObject.get(key) instanceof JSONArray) {
+
+                        if (key.equals("asks")) {
+                            internal = jObject.getJSONArray(key);
+
+                            double totalBid = 0;
+
+                            for (int i = 0; i < internal.length(); i++) {
+                                JSONArray item = internal.getJSONArray(i);
+
+                                totalBid += item.getDouble(0) * item.getDouble(1);
+
+                                entriesAsk.add(new Entry((float) totalBid, i));
+
+                                labelsAsk.add(item.getString(0));
+                            }
+                        }
+
+                        if (key.equals("bids")) {
+                            internal = jObject.getJSONArray(key);
+
+                            double totalAsk = 0;
+
+                            for (int i = 0; i < internal.length(); i++) {
+                                JSONArray item = internal.getJSONArray(i);
+
+                                totalAsk += item.getDouble(0) * item.getDouble(1);
+
+                                entriesBid.add(new Entry((float) totalAsk, i));
+
+                                labelsBid.add(item.getString(0));
+                            }
+
+                            Collections.reverse(entriesBid);
+                            Collections.reverse(labelsBid);
+                        }
+                    }
+                }
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+
+            return null;
+        }
+
+        @Override
+        protected void onPostExecute(Void aVoid) {
+            super.onPostExecute(aVoid);
+
+            // bid
+
+            LineDataSet dataset = new LineDataSet(entriesBid, "o");
+
+            dataset.setColor(0xFF0000);
+
+            dataset.setDrawFilled(true);
+
+            LineData lineData = new LineData(labelsBid, dataset);
+
+            Utils.log("" + dataset);
+
+            marketChartBid.setData(lineData);
+
+            marketChartBid.getAxisRight().setDrawLabels(false);
+
+            marketChartBid.setDescription("");
+
+            marketChartBid.notifyDataSetChanged();
+
+            marketChartBid.invalidate();
+
+            // ask
+
+            LineDataSet datasetAsk = new LineDataSet(entriesAsk, "o");
+
+            datasetAsk.setColor(0x00FF00);
+
+            datasetAsk.setDrawFilled(true);
+
+            LineData lineDataAsk = new LineData(labelsAsk, datasetAsk);
+
+            Utils.log("" + datasetAsk);
+
+            marketChartAsk.setData(lineDataAsk);
+
+            marketChartAsk.getAxisRight().setDrawLabels(false);
+
+            marketChartAsk.setDescription("");
+
+            marketChartAsk.notifyDataSetChanged();
+
+            marketChartAsk.invalidate();
         }
     }
 
@@ -318,6 +468,11 @@ public class MainActivity extends AppCompatActivity {
 
         sCandle.setSelection(2);
         sZoom.setSelection(1);
+
+        // market chart
+
+        marketChartBid = (LineChart) findViewById(R.id.marketChartBid);
+        marketChartAsk = (LineChart) findViewById(R.id.marketChartAsk);
     }
 
     private void prepareListeners() {
