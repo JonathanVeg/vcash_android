@@ -184,7 +184,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void loadMarketChart() {
-        String url = "https://poloniex.com/public?command=returnOrderBook&currencyPair=BTC_XVC&depth=500";
+        String url = "https://poloniex.com/public?command=returnOrderBook&currencyPair=BTC_XVC&depth=750";
 
         Response.Listener<String> listener = new Response.Listener<String>() {
             @Override

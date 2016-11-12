@@ -9,7 +9,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:padding="8dp"
-        android:text="Chart (Poloniex Data)"
+        android:text="Charts (Poloniex Data)"
         android:textStyle="bold" />
 
     <LinearLayout
@@ -53,4 +53,5 @@
         android:id="@+id/coinChart"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
+
 </LinearLayout>

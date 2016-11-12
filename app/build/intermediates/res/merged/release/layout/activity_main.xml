@@ -75,6 +75,8 @@
 
         <include layout="@layout/chart" />
 
+        <include layout="@layout/market_chart" />
+
         <TextView
             android:id="@+id/tvDonateWallet"
             android:layout_width="match_parent"
