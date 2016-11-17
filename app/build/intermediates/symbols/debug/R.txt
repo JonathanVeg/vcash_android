@@ -613,8 +613,9 @@ int drawable design_snackbar_background 0x7f02004e
 int drawable ic_account_balance_wallet_white_24dp 0x7f02004f
 int drawable ic_action_calculate 0x7f020050
 int drawable ic_info_white_24dp 0x7f020051
-int drawable notification_template_icon_bg 0x7f020053
-int drawable xvc_icon 0x7f020052
+int drawable ic_share_white_24dp 0x7f020052
+int drawable notification_template_icon_bg 0x7f020054
+int drawable xvc_icon 0x7f020053
 int id about 0x7f0c00c5
 int id action0 0x7f0c00a4
 int id action_bar 0x7f0c005d
@@ -736,6 +737,7 @@ int id search_plate 0x7f0c0065
 int id search_src_text 0x7f0c0066
 int id search_voice_btn 0x7f0c006a
 int id select_dialog_listview 0x7f0c006b
+int id share 0x7f0c00c6
 int id shortcut 0x7f0c0055
 int id showCustom 0x7f0c0011
 int id showHome 0x7f0c0012

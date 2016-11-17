@@ -13,6 +13,9 @@ import android.text.style.URLSpan;
 import android.util.Log;
 import android.widget.TextView;
 
+import com.crashlytics.android.answers.Answers;
+import com.crashlytics.android.answers.ContentViewEvent;
+
 import java.math.BigDecimal;
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -102,5 +105,16 @@ public class Utils {
         SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(context);
 
         return preferences.getBoolean(key, defaultValue);
+    }
+
+    public static void answersLog(String contentName, String contentType, String contentId){
+        try{
+            Answers.getInstance().logContentView(new ContentViewEvent()
+                    .putContentName(contentName)
+                    .putContentType(contentType)
+                    .putContentId(contentId));
+        }catch (Exception e){
+            e.printStackTrace();
+        }
     }
 }

@@ -178,6 +178,25 @@ public class MainActivity extends AppCompatActivity {
 
                 return true;
 
+            case R.id.share:
+
+                try {
+                    Intent sharingIntent = new Intent(android.content.Intent.ACTION_SEND);
+                    sharingIntent.setType("text/plain");
+
+                    String shareBody = "Vcash Android App. Get here: https://play.google.com/store/apps/details?id=altcoin.br.vcash | Via @JonathanVeg2";
+                    sharingIntent.putExtra(android.content.Intent.EXTRA_SUBJECT, "Vcash Android App");
+                    sharingIntent.putExtra(android.content.Intent.EXTRA_TEXT, shareBody);
+
+                    startActivity(Intent.createChooser(sharingIntent, "Share via"));
+                } catch (Exception e) {
+                    e.printStackTrace();
+
+                    Toast.makeText(this, "Error while sharing", Toast.LENGTH_LONG).show();
+                }
+
+                return true;
+
             default:
                 return super.onOptionsItemSelected(item);
         }
