@@ -1,11 +1,11 @@
 [
     {
-        "merged": "/home/jonathan/Desktop/vcash_android/app/build/intermediates/res/merged/debug/drawable/ic_action_calculate.png",
-        "source": "/home/jonathan/Desktop/vcash_android/app/src/main/res/drawable/ic_action_calculate.png"
-    },
-    {
         "merged": "/home/jonathan/Desktop/vcash_android/app/build/intermediates/res/merged/debug/drawable/abc_list_selector_background_transition_holo_dark.xml",
         "source": "/home/jonathan/Desktop/vcash_android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/drawable/abc_list_selector_background_transition_holo_dark.xml"
+    },
+    {
+        "merged": "/home/jonathan/Desktop/vcash_android/app/build/intermediates/res/merged/debug/drawable/ic_action_calculate.png",
+        "source": "/home/jonathan/Desktop/vcash_android/app/src/main/res/drawable/ic_action_calculate.png"
     },
     {
         "merged": "/home/jonathan/Desktop/vcash_android/app/build/intermediates/res/merged/debug/drawable/abc_item_background_holo_dark.xml",

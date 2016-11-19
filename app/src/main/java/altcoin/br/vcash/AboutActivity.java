@@ -22,6 +22,20 @@ public class AboutActivity extends AppCompatActivity {
         setContentView(R.layout.activity_about);
 
         instanceObjects();
+
+        prepareLinks();
+    }
+
+    private void prepareLinks() {
+        Utils.textViewLink(tvAboutDeveloper, "https://twitter.com/jonathanveg2");
+        Utils.textViewLink(tvAboutCode, "https://github.com/JonathanVeg/vcash_android");
+
+        Utils.textViewLink(tvAboutVcash, "https://v.cash");
+        Utils.textViewLink(tvAboutCoinMarketCap, "https://coinmarketcap.com/currencies/vcash/");
+        Utils.textViewLink(tvAboutBittrex, "https://bittrex.com/Market/Index?MarketName=BTC-XVC");
+        Utils.textViewLink(tvAboutPoloniex, "https://poloniex.com/exchange#btc_xvc");
+        Utils.textViewLink(tvAboutBlinktrade, "https://blinktrade.com/docs/?shell#public-rest-api");
+        Utils.textViewLink(tvAboutBlockexperts, "https://www.blockexperts.com/xvc");
     }
 
     private void instanceObjects() {
@@ -34,16 +48,6 @@ public class AboutActivity extends AppCompatActivity {
         tvAboutPoloniex = (TextView) findViewById(R.id.tvAboutPoloniex);
         tvAboutBlinktrade = (TextView) findViewById(R.id.tvAboutBlinktrade);
         tvAboutBlockexperts = (TextView) findViewById(R.id.tvAboutBlockexperts);
-
-        Utils.textViewLink(tvAboutDeveloper, "https://twitter.com/jonathanveg2");
-        Utils.textViewLink(tvAboutCode, "https://github.com/JonathanVeg/vcash_android");
-
-        Utils.textViewLink(tvAboutVcash, "https://v.cash");
-        Utils.textViewLink(tvAboutCoinMarketCap, "https://coinmarketcap.com/currencies/vcash/");
-        Utils.textViewLink(tvAboutBittrex, "https://bittrex.com/Market/Index?MarketName=BTC-XVC");
-        Utils.textViewLink(tvAboutPoloniex, "https://poloniex.com/exchange#btc_xvc");
-        Utils.textViewLink(tvAboutBlinktrade, "https://blinktrade.com/docs/?shell#public-rest-api");
-        Utils.textViewLink(tvAboutBlockexperts, "https://www.blockexperts.com/xvc");
     }
 
 }
