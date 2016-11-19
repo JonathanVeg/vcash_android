@@ -107,13 +107,13 @@ public class Utils {
         return preferences.getBoolean(key, defaultValue);
     }
 
-    public static void answersLog(String contentName, String contentType, String contentId){
-        try{
+    public static void answersLog(String contentName, String contentType, String contentId) {
+        try {
             Answers.getInstance().logContentView(new ContentViewEvent()
                     .putContentName(contentName)
                     .putContentType(contentType)
                     .putContentId(contentId));
-        }catch (Exception e){
+        } catch (Exception e) {
             e.printStackTrace();
         }
     }

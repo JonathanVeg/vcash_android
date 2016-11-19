@@ -1,5 +1,9 @@
 [
     {
+        "merged": "/home/jonathan/Desktop/vcash_android/app/build/intermediates/res/merged/release/drawable-xxxhdpi/ic_share_white_24dp.png",
+        "source": "/home/jonathan/Desktop/vcash_android/app/src/main/res/drawable-xxxhdpi/ic_share_white_24dp.png"
+    },
+    {
         "merged": "/home/jonathan/Desktop/vcash_android/app/build/intermediates/res/merged/release/drawable-xxxhdpi/ic_info_white_24dp.png",
         "source": "/home/jonathan/Desktop/vcash_android/app/src/main/res/drawable-xxxhdpi/ic_info_white_24dp.png"
     },
