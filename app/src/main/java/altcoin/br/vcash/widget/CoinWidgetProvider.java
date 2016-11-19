@@ -45,6 +45,9 @@ public class CoinWidgetProvider extends AppWidgetProvider {
                 if (appWidgetIds != null && appWidgetIds.length > 0) {
                     onUpdate(context, appWidgetManager, appWidgetIds);
                 }
+
+                Utils.answersLog("manuallyWidgetUpdate", "manuallyWidgetUpdate", "0002");
+
             } catch (Exception e) {
                 e.printStackTrace();
             }
@@ -75,6 +78,8 @@ public class CoinWidgetProvider extends AppWidgetProvider {
 
                         views.setTextViewText(R.id.tvWidValInBtc, Utils.numberComplete(obj.getString("price_btc"), 8));
                         views.setTextViewText(R.id.tvWidValInUsd, Utils.numberComplete(obj.getString("price_usd"), 4));
+
+                        Utils.answersLog("widgetUpdate", "widgetUpdate", "0001");
 
                     } catch (Exception e) {
                         e.printStackTrace();
