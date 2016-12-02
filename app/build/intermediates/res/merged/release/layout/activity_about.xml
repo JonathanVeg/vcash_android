@@ -48,6 +48,32 @@
             android:textStyle="bold" />
 
         <LinearLayout
+            android:id="@+id/llDonate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+            <TextView
+                android:id="@+id/tvAboutDonate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Donate XVC (click in the wallet to copy)"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvAboutDonateWallet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="VsShsTf3Za2MAy6e5waDNM6u7VBEVKfxgh"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
             android:layout_width="300dp"
             android:layout_height="2dp"
             android:layout_gravity="center"
@@ -82,6 +108,26 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="https://v.cash" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Zero Slot (fastest slot-less gambling):"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvAboutZeroSlot"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="http://zeroslot.com/" />
 
         </LinearLayout>
 

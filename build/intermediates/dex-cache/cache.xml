@@ -39,6 +39,15 @@
     </item>
     <item
         is-multidex="false"
+        jar="/home/jonathan/Desktop/vcash_android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.4.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.0"
+        sha1="618485fef3ebe12127f7622abbc9b5b39057b5c2">
+        <dex dex="/home/jonathan/Desktop/vcash_android/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-basement-9.4.0_204d8678f59ff2d3cc5fddbbb172e6b03465f02e.jar" />
+    </item>
+    <item
+        is-multidex="false"
         jar="/home/jonathan/Desktop/vcash_android/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/24.0.0/jars/classes.jar"
         jumboMode="false"
         optimize="true"
@@ -75,6 +84,15 @@
     </item>
     <item
         is-multidex="false"
+        jar="/home/jonathan/Desktop/vcash_android/app/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics-impl/9.4.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.0"
+        sha1="a440fb3fec30ff925e9f601cc458fb6671834cb2">
+        <dex dex="/home/jonathan/Desktop/vcash_android/app/build/intermediates/pre-dexed/debug/com.google.firebase-firebase-analytics-impl-9.4.0_06a816792984312c55ba5c853440d4c58649be57.jar" />
+    </item>
+    <item
+        is-multidex="false"
         jar="/home/jonathan/.gradle/caches/modules-2/files-2.1/com.mcxiaoke.volley/library/1.0.17/f417d7f776d1ee5858fc04d9362aa45e9bedd26b/library-1.0.17.jar"
         jumboMode="false"
         optimize="true"
@@ -84,12 +102,30 @@
     </item>
     <item
         is-multidex="false"
+        jar="/home/jonathan/Desktop/vcash_android/app/build/intermediates/exploded-aar/com.google.firebase/firebase-database/9.4.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.0"
+        sha1="84bf369090a8f7e293817efbd6ccf31ada1be32b">
+        <dex dex="/home/jonathan/Desktop/vcash_android/app/build/intermediates/pre-dexed/debug/com.google.firebase-firebase-database-9.4.0_017dfa06dd9b07fe40942e9e49124531fe93f1df.jar" />
+    </item>
+    <item
+        is-multidex="false"
         jar="/home/jonathan/Desktop/vcash_android/app/build/intermediates/exploded-aar/com.koushikdutta.async/androidasync/2.1.8/jars/classes.jar"
         jumboMode="false"
         optimize="true"
         revision="24.0.0"
         sha1="210a4042913301c708bd9aeed46e4ebb5d77e462">
         <dex dex="/home/jonathan/Desktop/vcash_android/app/build/intermediates/pre-dexed/debug/com.koushikdutta.async-androidasync-2.1.8_8f25e0b72748907149a58a8950477e18d5519850.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/jonathan/Desktop/vcash_android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.4.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.0"
+        sha1="3dee4ce5844d39d843d503fb8fe04e51e5bfffac">
+        <dex dex="/home/jonathan/Desktop/vcash_android/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-base-9.4.0_a3971c2ecbebc9b398a9a5389f84a05cfd8a0b55.jar" />
     </item>
     <item
         is-multidex="false"
@@ -111,12 +147,39 @@
     </item>
     <item
         is-multidex="false"
+        jar="/home/jonathan/Desktop/vcash_android/app/build/intermediates/exploded-aar/com.google.firebase/firebase-common/9.4.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.0"
+        sha1="18b5697c65c4fe5b7381613b8b8ae9ac52e26fa7">
+        <dex dex="/home/jonathan/Desktop/vcash_android/app/build/intermediates/pre-dexed/debug/com.google.firebase-firebase-common-9.4.0_bd59a332667912515c0fb3d2b4260b7b3321df9c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/jonathan/Desktop/vcash_android/app/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics/9.4.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.0"
+        sha1="88848548ab56d4fbf3d2d1b0c85bf1ff9b4c1f4b">
+        <dex dex="/home/jonathan/Desktop/vcash_android/app/build/intermediates/pre-dexed/debug/com.google.firebase-firebase-analytics-9.4.0_deadbd7ae17ef24a925db3072d48d5707d8a3f68.jar" />
+    </item>
+    <item
+        is-multidex="false"
         jar="/home/jonathan/Desktop/vcash_android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/jars/classes.jar"
         jumboMode="false"
         optimize="true"
         revision="24.0.0"
         sha1="0874286cc2fd88d54fdf130e9d5372730da6de97">
         <dex dex="/home/jonathan/Desktop/vcash_android/app/build/intermediates/pre-dexed/debug/com.android.support-appcompat-v7-24.0.0_6f58ff4d13fc7be116cb68951f3a02de78c3ce64.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/jonathan/Desktop/vcash_android/app/build/intermediates/exploded-aar/com.google.firebase/firebase-database-connection/9.4.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.0"
+        sha1="0e4d53465cc141bec58f18a894e4c4e80633fa32">
+        <dex dex="/home/jonathan/Desktop/vcash_android/app/build/intermediates/pre-dexed/debug/com.google.firebase-firebase-database-connection-9.4.0_593691988b7eea6d82bddedfd7bcc355cd0266e1.jar" />
     </item>
     <item
         is-multidex="false"
@@ -147,6 +210,15 @@
     </item>
     <item
         is-multidex="false"
+        jar="/home/jonathan/Desktop/vcash_android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-tasks/9.4.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.0"
+        sha1="8a36d229011e75f0caef408e1adf0d3fd4d94e02">
+        <dex dex="/home/jonathan/Desktop/vcash_android/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-tasks-9.4.0_4ff8a82a7940aaa6a46430efe0840256db8da0ea.jar" />
+    </item>
+    <item
+        is-multidex="false"
         jar="/home/jonathan/Desktop/vcash_android/app/build/intermediates/exploded-aar/com.koushikdutta.ion/ion/2.1.8/jars/classes.jar"
         jumboMode="false"
         optimize="true"
@@ -162,6 +234,15 @@
         revision="24.0.0"
         sha1="2f7e6e2dad1bccaf68a8820820adc6c0d5b96d37">
         <dex dex="/home/jonathan/Desktop/vcash_android/app/build/intermediates/pre-dexed/debug/com.android.support-support-v4-24.0.0_33450d0614dee74e0c4c91ebf26cd8a37c4387f6.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/jonathan/Desktop/vcash_android/app/build/intermediates/exploded-aar/com.google.firebase/firebase-iid/9.4.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.0"
+        sha1="3b7173b3df4c7029699919414400041f64519e34">
+        <dex dex="/home/jonathan/Desktop/vcash_android/app/build/intermediates/pre-dexed/debug/com.google.firebase-firebase-iid-9.4.0_d846ac3908ed38149c6b72b029369d4ce8e66294.jar" />
     </item>
     <item
         is-multidex="false"
