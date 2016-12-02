@@ -37,6 +37,10 @@ This app was made using Android Studio and Java (Android native application).
 * Volley - Lib used for internet connections
 * MpAndroidChart used for making the chart
 
+### Donate
+You can donate some Vcashs sending to:
+
+* VoBZoGGxnAFxgm8TxvaUYc9LYvmurRfHEg
 
 **Disclaimer:**
 I was authorized for using the official logos and colors.
