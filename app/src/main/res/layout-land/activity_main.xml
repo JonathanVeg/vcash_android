@@ -25,7 +25,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:text="https://v.cash/" />
+            android:text="https://vcash.info/" />
 
         <LinearLayout
             android:layout_width="wrap_content"
@@ -97,13 +97,5 @@
 
         <include layout="@layout/market_chart" />
 
-        <TextView
-            android:id="@+id/tvDonateWallet"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:text="Donate: VoBZoGGxnAFxgm8TxvaUYc9LYvmurRfHEg"
-            android:textAlignment="viewEnd"
-            android:visibility="gone" />
     </LinearLayout>
 </ScrollView>

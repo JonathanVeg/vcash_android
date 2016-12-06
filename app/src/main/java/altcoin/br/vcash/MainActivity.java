@@ -441,21 +441,10 @@ public class MainActivity extends AppCompatActivity {
         TextView tvBittrexTitle = (TextView) findViewById(R.id.tvBittrexTitle);
         TextView tvCoinMarketCapTitle = (TextView) findViewById(R.id.tvCoinMarketCapTitle);
 
-        TextView tvDonateWallet = (TextView) findViewById(R.id.tvDonateWallet);
-
-        Utils.textViewLink(tvOficialSite, "https://v.cash/");
+        Utils.textViewLink(tvOficialSite, "https://vcash.info/");
         Utils.textViewLink(tvPoloniexTitle, "https://coinmarketcap.com/exchanges/poloniex/");
         Utils.textViewLink(tvBittrexTitle, "https://coinmarketcap.com/exchanges/bittrex/");
         Utils.textViewLink(tvCoinMarketCapTitle, "https://coinmarketcap.com/currencies/vcash/#markets");
-
-        tvDonateWallet.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Utils.copyToClipboard(MainActivity.this, "VoBZoGGxnAFxgm8TxvaUYc9LYvmurRfHEg");
-
-                Toast.makeText(MainActivity.this, "Wallet copied :)", Toast.LENGTH_LONG).show();
-            }
-        });
 
         // parte dos graficos
 

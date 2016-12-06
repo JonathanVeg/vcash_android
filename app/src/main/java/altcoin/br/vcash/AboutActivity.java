@@ -28,6 +28,10 @@ public class AboutActivity extends AppCompatActivity {
     private TextView tvAboutBlinktrade;
     private TextView tvAboutBlockexperts;
     private TextView tvAboutZeroSlot;
+    private TextView tvAboutSlack;
+    private TextView tvAboutReddit;
+    private TextView tvAboutTwitter;
+    private TextView tvAboutGit;
 
     private LinearLayout llAboutDonate;
     private TextView tvAboutDonateWallet;
@@ -57,6 +61,10 @@ public class AboutActivity extends AppCompatActivity {
         tvAboutBlinktrade = (TextView) findViewById(R.id.tvAboutBlinktrade);
         tvAboutBlockexperts = (TextView) findViewById(R.id.tvAboutBlockexperts);
         tvAboutZeroSlot = (TextView) findViewById(R.id.tvAboutZeroSlot);
+        tvAboutSlack = (TextView) findViewById(R.id.tvAboutSlack);
+        tvAboutReddit = (TextView) findViewById(R.id.tvAboutReddit);
+        tvAboutTwitter = (TextView) findViewById(R.id.tvAboutTwitter);
+        tvAboutGit = (TextView) findViewById(R.id.tvAboutGit);
 
         tvAboutDonateWallet = (TextView) findViewById(R.id.tvAboutDonateWallet);
         llAboutDonate = (LinearLayout) findViewById(R.id.llDonate);
@@ -67,13 +75,17 @@ public class AboutActivity extends AppCompatActivity {
         Utils.textViewLink(tvAboutDeveloper, "https://twitter.com/jonathanveg2");
         Utils.textViewLink(tvAboutCode, "https://github.com/JonathanVeg/vcash_android");
 
-        Utils.textViewLink(tvAboutVcash, "https://v.cash");
+        Utils.textViewLink(tvAboutVcash, "https://vcash.info");
         Utils.textViewLink(tvAboutCoinMarketCap, "https://coinmarketcap.com/currencies/vcash/");
         Utils.textViewLink(tvAboutBittrex, "https://bittrex.com/Market/Index?MarketName=BTC-XVC");
         Utils.textViewLink(tvAboutPoloniex, "https://poloniex.com/exchange#btc_xvc");
         Utils.textViewLink(tvAboutBlinktrade, "https://blinktrade.com/docs/?shell#public-rest-api");
         Utils.textViewLink(tvAboutBlockexperts, "https://www.blockexperts.com/xvc");
         Utils.textViewLink(tvAboutZeroSlot, "http://zeroslot.com/");
+        Utils.textViewLink(tvAboutSlack, "https://slack.vcash.info/");
+        Utils.textViewLink(tvAboutReddit, "https://www.reddit.com/r/Vcash/");
+        Utils.textViewLink(tvAboutTwitter, "https://twitter.com/VCASH_NEWS");
+        Utils.textViewLink(tvAboutGit, "https://github.com/xCoreDev/vcash");
     }
 
     private void prepareFirebasePart() {

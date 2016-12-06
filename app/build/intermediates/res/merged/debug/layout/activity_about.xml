@@ -34,7 +34,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginTop="5dp"
-            android:text="App developed by Jonathan Silva"
+            android:text="Developed by Jonathan Silva"
             android:textSize="12sp"
             android:textStyle="bold" />
 
@@ -88,7 +88,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:padding="8dp"
-            android:text="Source of values"
+            android:text="Important Links"
             android:textStyle="bold" />
 
         <LinearLayout
@@ -107,7 +107,7 @@
                 android:id="@+id/tvAboutVcash"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="https://v.cash" />
+                android:text="https://vcash.info" />
 
         </LinearLayout>
 
@@ -116,6 +116,87 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="5dp"
             android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Source code: "
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvAboutGit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="https://github.com/xCoreDev/vcash" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Slack channel (ask an invite): "
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvAboutSlack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="https://slack.vcash.info/" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Twitter"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvAboutTwitter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="https://twitter.com/VCASH_NEWS" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Reddit "
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvAboutReddit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="https://www.reddit.com/r/Vcash/" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:orientation="vertical"
+            android:visibility="gone">
 
             <TextView
                 android:layout_width="wrap_content"
