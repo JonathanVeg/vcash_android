@@ -58,6 +58,26 @@
             android:inputType="numberDecimal"
             android:minEms="12" />
 
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Alert for exchanges:"
+            android:textStyle="bold" />
+
+        <CheckBox
+            android:id="@+id/cbAlertPoloniex"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="Poloniex" />
+
+        <CheckBox
+            android:id="@+id/cbAlertBittrex"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="Bittrex" />
+
         <Button
             android:id="@+id/bSaveAlert"
             android:layout_width="100dp"
@@ -68,6 +88,13 @@
             android:textColor="@color/white"
             android:textSize="15sp" />
 
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="25dp"
+            android:text="Current alerts "
+            android:textStyle="bold" />
 
         <RelativeLayout
             android:id="@+id/rlNoAlerts"
@@ -80,17 +107,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="No alerts"
-                android:textStyle="bold"
-                android:textAlignment="center"/>
+                android:textAlignment="center"
+                android:textStyle="bold" />
         </RelativeLayout>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_margin="25dp"
-            android:text="Current alerts "
-            android:textStyle="bold" />
 
         <LinearLayout
             android:id="@+id/llCurrentAlerts"

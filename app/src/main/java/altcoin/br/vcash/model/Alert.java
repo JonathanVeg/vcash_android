@@ -16,6 +16,8 @@ public class Alert {
     private String value;
     private String createdAt; // timestamp
     private boolean active;
+    private boolean bittrex;
+    private boolean poloniex;
 
     public Alert(Context context) {
         this.context = context;
@@ -25,6 +27,8 @@ public class Alert {
         setValue("0");
         setCreatedAt(String.valueOf(System.currentTimeMillis() / 1000));
         setActive(true);
+        setPoloniex(true);
+        setBittrex(true);
     }
 
     public boolean save() {
@@ -37,6 +41,8 @@ public class Alert {
             cv.put("VALUE", getValue());
             cv.put("CREATED_AT", getCreatedAt());
             cv.put("ACTIVE", isActive());
+            cv.put("BITTREX", isBittrex());
+            cv.put("POLONIEX", isPoloniex());
 
             return db.update("alerts", cv, "_id = " + getId(), null) != 0 || db.insert("alerts", cv);
 
@@ -112,5 +118,21 @@ public class Alert {
 
     public void setActive(boolean active) {
         this.active = active;
+    }
+
+    public boolean isBittrex() {
+        return bittrex;
+    }
+
+    public void setBittrex(boolean bittrex) {
+        this.bittrex = bittrex;
+    }
+
+    public boolean isPoloniex() {
+        return poloniex;
+    }
+
+    public void setPoloniex(boolean poloniex) {
+        this.poloniex = poloniex;
     }
 }

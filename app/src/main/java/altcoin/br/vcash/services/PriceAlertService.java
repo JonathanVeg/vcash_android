@@ -66,7 +66,7 @@ public class PriceAlertService extends Service {
             DBTools db = new DBTools(getApplicationContext());
 
             try {
-                int count = db.search("select _id, awhen, value, active from alerts where active = 1");
+                int count = db.search("select _id, awhen, value, active, bittrex, poloniex from alerts where active = 1");
 
                 Alert alert;
 
@@ -77,6 +77,8 @@ public class PriceAlertService extends Service {
                     alert.setWhen(db.getData(i, 1));
                     alert.setValue(db.getData(i, 2));
                     alert.setActive(Utils.isTrue(db.getData(i, 3)));
+                    alert.setBittrex(Utils.isTrue(db.getData(i, 4)));
+                    alert.setPoloniex(Utils.isTrue(db.getData(i, 5)));
 
                     if (alert.isActive())
                         alerts.add(alert);
@@ -347,8 +349,9 @@ public class PriceAlertService extends Service {
 
             final Alert alert = alerts.get(i);
 
-            loadBittrexData(alert);
-            loadPoloniexData(alert);
+            if (alert.isBittrex()) loadBittrexData(alert);
+
+            if (alert.isPoloniex()) loadPoloniexData(alert);
         }
     }
 

@@ -22,8 +22,8 @@ android {
         applicationId "altcoin.br.vcash"
         minSdkVersion 17
         targetSdkVersion 24
-        versionCode 12
-        versionName "2.8"
+        versionCode 13
+        versionName "3.0"
     }
     buildTypes {
         release {

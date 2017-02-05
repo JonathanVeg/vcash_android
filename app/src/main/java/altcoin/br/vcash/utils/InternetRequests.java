@@ -44,7 +44,6 @@ public class InternetRequests {
     private static Response.Listener emptyResponseListener = new Response.Listener<String>() {
         @Override
         public void onResponse(String response) {
-
         }
     };
 
@@ -139,8 +138,6 @@ public class InternetRequests {
     // mais completo, onde pode mandar tudo.
     private void executeRequest(int method, String url, Response.Listener responseListener, Response.ErrorListener errorListener, final Map<String, String> params) {
         try {
-            Utils.log("URL: " + url);
-
             if (responseListener == null) responseListener = emptyResponseListener;
 
             if (errorListener == null) errorListener = emptyErrorListener;

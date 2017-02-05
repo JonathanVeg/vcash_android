@@ -59,7 +59,9 @@ class CreateDatabase extends SQLiteOpenHelper {
                             "awhen integer, " +
                             "value varchar(15), " +
                             "created_at datetime," +
-                            "active boolean" +
+                            "active boolean," +
+                            "poloniex boolean," +
+                            "bittrex boolean" +
                             ")");
                 } catch (Exception ignored) {
                 }

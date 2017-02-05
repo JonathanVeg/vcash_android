@@ -8,6 +8,7 @@ import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
+import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
@@ -24,6 +25,8 @@ import io.fabric.sdk.android.services.concurrency.AsyncTask;
 
 public class AlertActivity extends AppCompatActivity {
 
+    private CheckBox cbAlertPoloniex;
+    private CheckBox cbAlertBittrex;
     private Spinner sOptions;
     private EditText etValue;
     private Button bSaveAlert;
@@ -52,6 +55,8 @@ public class AlertActivity extends AppCompatActivity {
         bSaveAlert = (Button) findViewById(R.id.bSaveAlert);
         rlNoAlerts = (RelativeLayout) findViewById(R.id.rlNoAlerts);
         llCurrentAlerts = (LinearLayout) findViewById(R.id.llCurrentAlerts);
+        cbAlertPoloniex = (CheckBox) findViewById(R.id.cbAlertPoloniex);
+        cbAlertBittrex = (CheckBox) findViewById(R.id.cbAlertBittrex);
 
         alerts = new ArrayList<>();
 
@@ -80,12 +85,14 @@ public class AlertActivity extends AppCompatActivity {
 
                     alert.setValue(etValue.getText().toString());
 
+                    alert.setBittrex(cbAlertBittrex.isChecked());
+
+                    alert.setPoloniex(cbAlertPoloniex.isChecked());
+
                     alert.setActive(true);
 
                     if (alert.save()) {
                         Utils.alert(AlertActivity.this, "Alert saved");
-
-                        clearForm();
 
                         new atLoadAlerts(AlertActivity.this).execute();
                     } else
@@ -97,10 +104,6 @@ public class AlertActivity extends AppCompatActivity {
                 }
             }
         });
-    }
-
-    private void clearForm() {
-        sOptions.setSelection(0);
     }
 
     class atLoadAlerts extends AsyncTask<Void, Void, Void> {
