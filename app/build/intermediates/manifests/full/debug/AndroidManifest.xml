@@ -66,6 +66,9 @@
             android:name="altcoin.br.vcash.AboutActivity"
             android:label="@string/title_activity_about" />
         <activity
+            android:name="altcoin.br.vcash.AlertActivity"
+            android:label="@string/title_activity_alerts" />
+        <activity
             android:name="com.google.android.gms.common.api.GoogleApiActivity"
             android:exported="false"
             android:theme="@android:style/Theme.Translucent.NoTitleBar" />

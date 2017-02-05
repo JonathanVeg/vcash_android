@@ -46,8 +46,13 @@ public class AdapterLinks extends BaseAdapter {
         TextView tvLinkLabel = (TextView) v.findViewById(R.id.tvLinkLabel);
         TextView tvLinkUrl = (TextView) v.findViewById(R.id.tvLinkUrl);
 
-        tvLinkLabel.setText(links.get(position).getLabel());
-        tvLinkUrl.setText(links.get(position).getUrl());
+        String label = links.get(position).getLabel();
+
+        if (!label.endsWith(":"))
+            label += ":";
+
+        tvLinkLabel.setText(label.trim());
+        tvLinkUrl.setText(links.get(position).getUrl().trim());
 
         Utils.textViewLink(tvLinkUrl, links.get(position).getUrl());
 

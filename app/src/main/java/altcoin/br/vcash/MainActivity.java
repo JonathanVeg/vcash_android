@@ -168,6 +168,11 @@ public class MainActivity extends AppCompatActivity {
 
                 return true;
 
+            case R.id.alerts:
+                startActivity(new Intent(this, AlertActivity.class));
+
+                return true;
+
             case R.id.wallets:
                 startActivity(new Intent(this, WalletsActivity.class));
 

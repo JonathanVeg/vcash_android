@@ -43,12 +43,12 @@ public class CalculatorActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_calculator);
 
-        intanceObjects();
+        instanceObjects();
 
         prepareListeners();
     }
 
-    private void intanceObjects() {
+    private void instanceObjects() {
 
         bConvertBrlTo = (Button) findViewById(R.id.bConvertBrlTo);
         bConvertBtcTo = (Button) findViewById(R.id.bConvertBtcTo);

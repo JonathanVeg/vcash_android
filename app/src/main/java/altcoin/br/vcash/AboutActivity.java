@@ -32,18 +32,6 @@ public class AboutActivity extends AppCompatActivity {
     private TextView tvAboutDeveloper;
     private TextView tvAboutCode;
 
-//    private TextView tvAboutVcash;
-//    private TextView tvAboutCoinMarketCap;
-//    private TextView tvAboutBittrex;
-//    private TextView tvAboutPoloniex;
-//    private TextView tvAboutBlinktrade;
-//    private TextView tvAboutBlockexperts;
-//    private TextView tvAboutZeroSlot;
-//    private TextView tvAboutSlack;
-//    private TextView tvAboutReddit;
-//    private TextView tvAboutTwitter;
-//    private TextView tvAboutGit;
-
     private LinearLayout llAboutDonate;
     private TextView tvAboutDonateWallet;
 
@@ -65,9 +53,6 @@ public class AboutActivity extends AppCompatActivity {
         lvLinks = (ListView) findViewById(R.id.lvLinks);
         links = new ArrayList<>();
 
-        links.add(new Link("Google:", "https://google.com"));
-        links.add(new Link("Twitter:", "https://twitter.com"));
-
         adapterLinks = new AdapterLinks(this, links);
 
         lvLinks.setAdapter(adapterLinks);
@@ -77,37 +62,11 @@ public class AboutActivity extends AppCompatActivity {
 
         tvAboutDonateWallet = (TextView) findViewById(R.id.tvAboutDonateWallet);
         llAboutDonate = (LinearLayout) findViewById(R.id.llDonate);
-
-        // antigos links aqui
-//        tvAboutVcash = (TextView) findViewById(R.id.tvAboutVcash);
-//        tvAboutCoinMarketCap = (TextView) findViewById(R.id.tvAboutCoinMarketCap);
-//        tvAboutBittrex = (TextView) findViewById(R.id.tvAboutBittrex);
-//        tvAboutPoloniex = (TextView) findViewById(R.id.tvAboutPoloniex);
-//        tvAboutBlinktrade = (TextView) findViewById(R.id.tvAboutBlinktrade);
-//        tvAboutBlockexperts = (TextView) findViewById(R.id.tvAboutBlockexperts);
-//        tvAboutZeroSlot = (TextView) findViewById(R.id.tvAboutZeroSlot);
-//        tvAboutSlack = (TextView) findViewById(R.id.tvAboutSlack);
-//        tvAboutReddit = (TextView) findViewById(R.id.tvAboutReddit);
-//        tvAboutTwitter = (TextView) findViewById(R.id.tvAboutTwitter);
-//        tvAboutGit = (TextView) findViewById(R.id.tvAboutGit);
     }
-
 
     private void prepareLinks() {
         Utils.textViewLink(tvAboutDeveloper, "https://twitter.com/jonathanveg2");
         Utils.textViewLink(tvAboutCode, "https://github.com/JonathanVeg/vcash_android");
-
-//        Utils.textViewLink(tvAboutVcash, "https://vcash.info");
-//        Utils.textViewLink(tvAboutCoinMarketCap, "https://coinmarketcap.com/currencies/vcash/");
-//        Utils.textViewLink(tvAboutBittrex, "https://bittrex.com/Market/Index?MarketName=BTC-XVC");
-//        Utils.textViewLink(tvAboutPoloniex, "https://poloniex.com/exchange#btc_xvc");
-//        Utils.textViewLink(tvAboutBlinktrade, "https://blinktrade.com/docs/?shell#public-rest-api");
-//        Utils.textViewLink(tvAboutBlockexperts, "https://www.blockexperts.com/xvc");
-//        Utils.textViewLink(tvAboutZeroSlot, "http://zeroslot.com/");
-//        Utils.textViewLink(tvAboutSlack, "https://slack.vcash.info/");
-//        Utils.textViewLink(tvAboutReddit, "https://www.reddit.com/r/Vcash/");
-//        Utils.textViewLink(tvAboutTwitter, "https://twitter.com/VCASH_NEWS");
-//        Utils.textViewLink(tvAboutGit, "https://github.com/xCoreDev/vcash");
     }
 
     private void prepareFirebasePart() {
@@ -166,10 +125,49 @@ public class AboutActivity extends AppCompatActivity {
                 }
             });
 
+            // links
+            final DatabaseReference drLinks = database.getReference("links");
 
+            // Read from the database
+            drLinks.addValueEventListener(new ValueEventListener() {
+                @Override
+                public void onDataChange(DataSnapshot dataSnapshot) {
+                    // This method is called once with the initial value and again
+                    // whenever data at this location is updated.
+
+                    try {
+                        String value = dataSnapshot.getValue(String.class);
+
+                        List<Link> localLinks = new ArrayList<>();
+
+                        String[] arrLinks = value.split(",");
+
+                        for (int i = 0; i < arrLinks.length; i += 2) {
+                            localLinks.add(new Link(arrLinks[i], arrLinks[i + 1]));
+                        }
+
+                        links.clear();
+
+                        links.addAll(localLinks);
+
+                        adapterLinks.notifyDataSetChanged();
+
+                        drLinks.keepSynced(true);
+                    } catch (Exception e) {
+                        e.printStackTrace();
+                    }
+                }
+
+                @Override
+                public void onCancelled(DatabaseError error) {
+                    // Failed to read value
+                    Log.w(TAG, "Failed to read value.", error.toException());
+                }
+            });
         } catch (Exception e) {
             e.printStackTrace();
         }
+
     }
 
     private void prepareListeners() {

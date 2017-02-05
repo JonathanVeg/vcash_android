@@ -6,7 +6,7 @@ import android.database.sqlite.SQLiteOpenHelper;
 
 class CreateDatabase extends SQLiteOpenHelper {
 
-    private static int CURRENT_DB_VERSION = 3;
+    private static int CURRENT_DB_VERSION = 4;
 
     CreateDatabase(Context context, String dbName) {
         super(context, dbName, null, CURRENT_DB_VERSION);
@@ -40,16 +40,33 @@ class CreateDatabase extends SQLiteOpenHelper {
                             "address varchar(100), " +
                             "last_balance double" +
                             ")");
-                } catch (Exception e) {
-                    e.printStackTrace();
+                } catch (Exception ignored) {
                 }
+
+                break;
 
             case 3:
                 try {
                     db.execSQL("ALTER TABLE wallets ADD COLUMN balance varchar(20)");
-                } catch (Exception e) {
-                    e.printStackTrace();
+                } catch (Exception ignored) {
                 }
+
+                break;
+
+            case 4:
+                try {
+                    db.execSQL("CREATE TABLE if not exists alerts(_id integer primary key autoincrement, " +
+                            "awhen integer, " +
+                            "value varchar(15), " +
+                            "created_at datetime," +
+                            "active boolean" +
+                            ")");
+                } catch (Exception ignored) {
+                }
+
+                break;
+
+
         }
     }
 

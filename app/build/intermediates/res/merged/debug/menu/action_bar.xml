@@ -9,6 +9,12 @@
         android:title="Calculator" />
 
     <item
+        android:id="@+id/alerts"
+        android:icon="@drawable/ic_add_alert_white_24dp"
+        android:showAsAction="ifRoom"
+        android:title="Alerts" />
+
+    <item
         android:id="@+id/wallets"
         android:icon="@drawable/ic_account_balance_wallet_white_24dp"
         android:showAsAction="ifRoom"
