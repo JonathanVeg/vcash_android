@@ -40,6 +40,7 @@ import java.util.Iterator;
 import java.util.List;
 
 import altcoin.br.vcash.services.BalanceChangesService;
+import altcoin.br.vcash.services.PriceAlertService;
 import altcoin.br.vcash.utils.Bitcoin;
 import altcoin.br.vcash.utils.InternetRequests;
 import altcoin.br.vcash.utils.Utils;
@@ -94,6 +95,7 @@ public class MainActivity extends AppCompatActivity {
         loadMarketChart();
 
         startService(new Intent(this, BalanceChangesService.class));
+        startService(new Intent(this, PriceAlertService.class));
     }
 
     @Override

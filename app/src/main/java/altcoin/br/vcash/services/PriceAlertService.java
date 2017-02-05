@@ -7,10 +7,10 @@ import android.app.Service;
 import android.app.TaskStackBuilder;
 import android.content.Context;
 import android.content.Intent;
-import android.graphics.BitmapFactory;
 import android.media.Ringtone;
 import android.media.RingtoneManager;
 import android.net.Uri;
+import android.os.AsyncTask;
 import android.os.IBinder;
 import android.support.v4.app.NotificationCompat;
 import android.text.Html;
@@ -21,6 +21,7 @@ import com.android.volley.Response;
 import org.json.JSONObject;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
 import java.util.Timer;
 import java.util.TimerTask;
@@ -29,6 +30,7 @@ import altcoin.br.vcash.MainActivity;
 import altcoin.br.vcash.R;
 import altcoin.br.vcash.data.DBTools;
 import altcoin.br.vcash.model.Alert;
+import altcoin.br.vcash.utils.InternetRequests;
 import altcoin.br.vcash.utils.Utils;
 
 public class PriceAlertService extends Service {
@@ -43,13 +45,12 @@ public class PriceAlertService extends Service {
 
         int minutes = 5;
 
-//        if (minutes < 1) minutes = 1;
-//
-//        if (minutes >= 9999) minutes = 9999;
+        // if (minutes < 1) minutes = 1;
+        // if (minutes >= 9999) minutes = 9999;
 
-        timer.scheduleAtFixedRate(new mainTask(), 0, minutes * 60 * 1000);
+        // timer.scheduleAtFixedRate(new mainTask(), 0, minutes * 60 * 1000);
 
-        // timer.scheduleAtFixedRate(new mainTask(), 0, 5 * 1000); // 5 segundos (para testes)
+        timer.scheduleAtFixedRate(new mainTask(), 0, 20 * 1000); // 20 segundos (para testes)
     }
 
     private class mainTask extends TimerTask {
@@ -59,8 +60,7 @@ public class PriceAlertService extends Service {
             DBTools db = new DBTools(getApplicationContext());
 
             try {
-
-                int count = db.search("select _id, coin, awhen, value, active from alerts where active = 1 order by coin ");
+                int count = db.search("select _id, awhen, value, active from alerts where active = 1");
 
                 Alert alert;
 
@@ -68,9 +68,9 @@ public class PriceAlertService extends Service {
                     alert = new Alert(getApplicationContext());
 
                     alert.setId(db.getData(i, 0));
-                    alert.setWhen(db.getData(i, 2));
-                    alert.setValue(db.getData(i, 3));
-                    alert.setActive(Utils.isTrue(db.getData(i, 4)));
+                    alert.setWhen(db.getData(i, 1));
+                    alert.setValue(db.getData(i, 2));
+                    alert.setActive(Utils.isTrue(db.getData(i, 3)));
 
                     if (alert.isActive())
                         alerts.add(alert);
@@ -86,50 +86,7 @@ public class PriceAlertService extends Service {
         }
     }
 
-    private void createNotification(String coin, String title, String text, String bigText, int id, int alertId) {
-        NotificationManager nm = (NotificationManager) getSystemService(NOTIFICATION_SERVICE);
-
-        Intent intent = new Intent(this, MainActivity.class);
-
-        TaskStackBuilder stack = TaskStackBuilder.create(this);
-        stack.addNextIntent(intent);
-
-        PendingIntent pendingIntent = stack.getPendingIntent(id, PendingIntent.FLAG_UPDATE_CURRENT);
-
-        NotificationCompat.Builder builder = new NotificationCompat.Builder(this);
-        builder.setContentTitle(title);
-        builder.setContentText(text);
-        builder.setSmallIcon(R.drawable.ic_monetization_on_white_24dp);
-        builder.setLargeIcon(BitmapFactory.decodeResource(getResources(), R.drawable.ic_monetization_on_white_24dp));
-
-        builder.setPriority(Notification.PRIORITY_MAX);
-        builder.setContentIntent(pendingIntent);
-
-        builder.setStyle(new NotificationCompat.BigTextStyle().bigText(bigText));
-
-        Notification n = builder.build();
-
-        n.ledARGB = 0xFFffff00;
-        n.ledOnMS = 500;
-        n.ledOffMS = 1000;
-
-        n.vibrate = new long[]{150, 300, 150, 300};
-
-        n.flags = Notification.FLAG_AUTO_CANCEL | Notification.FLAG_SHOW_LIGHTS;
-
-        nm.notify(id, n);
-
-        try {
-            Uri song = RingtoneManager.getDefaultUri(RingtoneManager.TYPE_NOTIFICATION);
-
-            Ringtone ringtone = RingtoneManager.getRingtone(this, song);
-
-            ringtone.play();
-        } catch (Exception ignored) {
-        }
-    }
-
-    private void createNotification2(int id, String title, String contentText, SpannableString line1, SpannableString line2, SpannableString line3) {
+    private void createNotification(int id, String title, String contentText, SpannableString line1, SpannableString line2, SpannableString line3) {
         Context context = getApplicationContext();
 
         NotificationManager notificationManager = (NotificationManager) context.getSystemService(NOTIFICATION_SERVICE);
@@ -147,7 +104,6 @@ public class PriceAlertService extends Service {
         builder.setContentText(contentText);
 
         builder.setSmallIcon(R.drawable.ic_monetization_on_white_36dp);
-        // builder.setLargeIcon(BitmapFactory.decodeResource(context.getResources(), R.drawable.ic_monetization_on_white_24dp));
 
         builder.setPriority(Notification.PRIORITY_MAX);
         builder.setContentIntent(pendingIntent);
@@ -184,13 +140,220 @@ public class PriceAlertService extends Service {
         notificationManager.notify(id, notification);
     }
 
+    private void loadBittrexData(final Alert alert) {
+        String url = "https://bittrex.com/api/v1.1/public/getmarketsummary?market=BTC-XVC";
+
+        Response.Listener<String> listener = new Response.Listener<String>() {
+            @Override
+            public void onResponse(String response) {
+                new atParseBittrexData(response, alert).execute();
+            }
+        };
+
+        InternetRequests internetRequests = new InternetRequests();
+        internetRequests.executePost(url, listener);
+    }
+
+    private void loadPoloniexData(final Alert alert) {
+        String url = "https://poloniex.com/public?command=returnTicker";
+
+        Response.Listener<String> listener = new Response.Listener<String>() {
+            @Override
+            public void onResponse(String response) {
+                new atParsePoloniexData(response, alert).execute();
+            }
+        };
+
+        InternetRequests internetRequests = new InternetRequests();
+        internetRequests.executePost(url, listener);
+    }
+
+    private class atParseBittrexData extends AsyncTask<Void, Void, Void> {
+        String response;
+
+        double last;
+
+        Alert alert;
+
+        atParseBittrexData(String response, Alert alert) {
+            this.response = response;
+            this.alert = alert;
+        }
+
+        @Override
+        protected Void doInBackground(Void... voids) {
+            try {
+
+                JSONObject obj = new JSONObject(response);
+
+                if (obj.getBoolean("success")) {
+                    obj = obj.getJSONArray("result").getJSONObject(0);
+
+                    last = Double.parseDouble(obj.getString("Last"));
+                }
+
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+
+            return null;
+        }
+
+        @Override
+        protected void onPostExecute(Void aVoid) {
+            super.onPostExecute(aVoid);
+
+            String nameCoin = "XVC";
+
+            String text = getString(R.string.alert_reached_for).replaceAll("COIN", nameCoin).replaceAll("EXCHANGE", "Bittrex");
+
+            if ((alert.getWhen() == Alert.GREATER && last > alert.getValueDouble()) || (alert.getWhen() == Alert.LOWER && last < alert.getValueDouble())) {
+
+                SpannableString line1 = new SpannableString(Html.fromHtml(text));
+
+                int notificationId;
+
+                if (alert.getWhen() == Alert.GREATER) {
+                    notificationId = hash("bittrexgreater" + alert.getValue());
+
+                    text = getString(R.string.gets_greater_than).replace("COIN", nameCoin).replace("VALUE", Utils.numberComplete(alert.getValueDouble(), 8));
+                } else {
+                    notificationId = hash("bittrexlower" + alert.getValue());
+
+                    text = getString(R.string.gets_lower_than).replace("COIN", nameCoin).replace("VALUE", Utils.numberComplete(alert.getValueDouble(), 8));
+                }
+
+                SpannableString line2 = new SpannableString(Html.fromHtml(text));
+
+                text = getString(R.string.alert_last_value).replace("VALUE", Utils.numberComplete(last, 8));
+                SpannableString line3 = new SpannableString(Html.fromHtml(text));
+
+                text = getString(R.string.alert_reached_for).replace("COIN", nameCoin).replaceAll("EXCHANGE", "Bittrex");
+
+                createNotification(notificationId, "VCash - Alert", Html.fromHtml(text).toString(), line1, line2, line3);
+
+                alert.setActive(false);
+
+                alert.save();
+            }
+        }
+    }
+
+    private class atParsePoloniexData extends AsyncTask<Void, Void, Void> {
+        String response;
+
+        double last;
+
+        Alert alert;
+
+        atParsePoloniexData(String response, Alert alert) {
+            this.response = response;
+            this.alert = alert;
+        }
+
+        JSONObject getSpecificSummary(String response) {
+            try {
+                String coin = "XVC";
+
+                JSONObject jObject = new JSONObject(response);
+
+                Iterator<?> keys = jObject.keys();
+
+                JSONObject jsonObj;
+
+                while (keys.hasNext()) {
+                    String key = (String) keys.next();
+                    if (jObject.get(key) instanceof JSONObject) {
+                        jsonObj = (JSONObject) jObject.get(key);
+
+                        if (key.startsWith("BTC_") && key.toLowerCase().contains(coin.toLowerCase())) {
+
+                            return jsonObj;
+
+                        }
+                    }
+                }
+
+                return null;
+            } catch (Exception e) {
+                e.printStackTrace();
+
+                return null;
+            }
+        }
+
+        @Override
+        protected Void doInBackground(Void... voids) {
+            try {
+                JSONObject obj = getSpecificSummary(response);
+
+                last = Double.parseDouble(obj.getString("last"));
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+
+            return null;
+        }
+
+        @Override
+        protected void onPostExecute(Void aVoid) {
+            super.onPostExecute(aVoid);
+
+            String nameCoin = "XVC";
+
+            String text = getString(R.string.alert_reached_for).replaceAll("COIN", nameCoin).replaceAll("EXCHANGE", "Poloniex");
+
+            if ((alert.getWhen() == Alert.GREATER && last > alert.getValueDouble()) || (alert.getWhen() == Alert.LOWER && last < alert.getValueDouble())) {
+
+                SpannableString line1 = new SpannableString(Html.fromHtml(text));
+
+                int notificationId;
+
+                if (alert.getWhen() == Alert.GREATER) {
+                    notificationId = hash("poloniexgreater" + alert.getValue());
+
+                    text = getString(R.string.gets_greater_than).replace("COIN", nameCoin).replace("VALUE", Utils.numberComplete(alert.getValueDouble(), 8));
+                } else {
+                    notificationId = hash("poloniexlower" + alert.getValue());
+
+                    text = getString(R.string.gets_lower_than).replace("COIN", nameCoin).replace("VALUE", Utils.numberComplete(alert.getValueDouble(), 8));
+                }
+
+                SpannableString line2 = new SpannableString(Html.fromHtml(text));
+
+                text = getString(R.string.alert_last_value).replace("VALUE", Utils.numberComplete(last, 8));
+                SpannableString line3 = new SpannableString(Html.fromHtml(text));
+
+                text = getString(R.string.alert_reached_for).replace("COIN", nameCoin).replaceAll("EXCHANGE", "Poloniex");
+
+                createNotification(notificationId, "VCash - Alert", Html.fromHtml(text).toString(), line1, line2, line3);
+
+                alert.setActive(false);
+
+                alert.save();
+            }
+        }
+
+    }
+
     private void prepareNotification(final List<Alert> alerts) {
         for (int i = 0; i < alerts.size(); i++) {
 
             final Alert alert = alerts.get(i);
 
-            // ler valor e preparar notificacao aqui
-
+            loadBittrexData(alert);
+            loadPoloniexData(alert);
         }
+    }
+
+    private int hash(String str) {
+        String s = str.replaceAll(" ", "");
+
+        int h = 0;
+
+        for (int i = 0; i < s.length(); i++)
+            h = 31 * h + s.charAt(i);
+
+        return h;
     }
 }
