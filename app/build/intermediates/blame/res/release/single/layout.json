@@ -28,12 +28,12 @@
         "source": "/home/jonathan/Desktop/vcash_android/app/build/intermediates/exploded-aar/com.android.support/design/24.0.0/res/layout/design_layout_snackbar_include.xml"
     },
     {
-        "merged": "/home/jonathan/Desktop/vcash_android/app/build/intermediates/res/merged/release/layout/notification_media_action.xml",
-        "source": "/home/jonathan/Desktop/vcash_android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/layout/notification_media_action.xml"
-    },
-    {
         "merged": "/home/jonathan/Desktop/vcash_android/app/build/intermediates/res/merged/release/layout/activity_calculator.xml",
         "source": "/home/jonathan/Desktop/vcash_android/app/src/main/res/layout/activity_calculator.xml"
+    },
+    {
+        "merged": "/home/jonathan/Desktop/vcash_android/app/build/intermediates/res/merged/release/layout/notification_media_action.xml",
+        "source": "/home/jonathan/Desktop/vcash_android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/layout/notification_media_action.xml"
     },
     {
         "merged": "/home/jonathan/Desktop/vcash_android/app/build/intermediates/res/merged/release/layout/notification_template_big_media.xml",
@@ -90,6 +90,14 @@
     {
         "merged": "/home/jonathan/Desktop/vcash_android/app/build/intermediates/res/merged/release/layout/design_navigation_menu_item.xml",
         "source": "/home/jonathan/Desktop/vcash_android/app/build/intermediates/exploded-aar/com.android.support/design/24.0.0/res/layout/design_navigation_menu_item.xml"
+    },
+    {
+        "merged": "/home/jonathan/Desktop/vcash_android/app/build/intermediates/res/merged/release/layout/activity_alert.xml",
+        "source": "/home/jonathan/Desktop/vcash_android/app/src/main/res/layout/activity_alert.xml"
+    },
+    {
+        "merged": "/home/jonathan/Desktop/vcash_android/app/build/intermediates/res/merged/release/layout/row_links.xml",
+        "source": "/home/jonathan/Desktop/vcash_android/app/src/main/res/layout/row_links.xml"
     },
     {
         "merged": "/home/jonathan/Desktop/vcash_android/app/build/intermediates/res/merged/release/layout/bittrex.xml",
@@ -166,6 +174,10 @@
     {
         "merged": "/home/jonathan/Desktop/vcash_android/app/build/intermediates/res/merged/release/layout/box_widget.xml",
         "source": "/home/jonathan/Desktop/vcash_android/app/src/main/res/layout/box_widget.xml"
+    },
+    {
+        "merged": "/home/jonathan/Desktop/vcash_android/app/build/intermediates/res/merged/release/layout/row_alerts.xml",
+        "source": "/home/jonathan/Desktop/vcash_android/app/src/main/res/layout/row_alerts.xml"
     },
     {
         "merged": "/home/jonathan/Desktop/vcash_android/app/build/intermediates/res/merged/release/layout/design_layout_snackbar.xml",

@@ -20,12 +20,12 @@
         "source": "/home/jonathan/Desktop/vcash_android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.4.0/res/drawable-mdpi-v4/common_google_signin_btn_text_dark_normal.9.png"
     },
     {
-        "merged": "/home/jonathan/Desktop/vcash_android/app/build/intermediates/res/merged/release/drawable-mdpi-v4/abc_popup_background_mtrl_mult.9.png",
-        "source": "/home/jonathan/Desktop/vcash_android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/drawable-mdpi-v4/abc_popup_background_mtrl_mult.9.png"
-    },
-    {
         "merged": "/home/jonathan/Desktop/vcash_android/app/build/intermediates/res/merged/release/drawable-mdpi-v4/abc_ic_star_half_black_48dp.png",
         "source": "/home/jonathan/Desktop/vcash_android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/drawable-mdpi-v4/abc_ic_star_half_black_48dp.png"
+    },
+    {
+        "merged": "/home/jonathan/Desktop/vcash_android/app/build/intermediates/res/merged/release/drawable-mdpi-v4/abc_popup_background_mtrl_mult.9.png",
+        "source": "/home/jonathan/Desktop/vcash_android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/drawable-mdpi-v4/abc_popup_background_mtrl_mult.9.png"
     },
     {
         "merged": "/home/jonathan/Desktop/vcash_android/app/build/intermediates/res/merged/release/drawable-mdpi-v4/common_google_signin_btn_icon_dark_focused.9.png",
