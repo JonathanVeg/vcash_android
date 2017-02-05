@@ -29,10 +29,6 @@
             android:label="@string/title_activity_wallets" />
 
         <service
-            android:name=".services.NotificationCoinService"
-            android:enabled="true" />
-
-        <service
             android:name=".services.BalanceChangesService"
             android:enabled="true" />
 
@@ -70,6 +66,14 @@
                 <action android:name="android.intent.action.BOOT_COMPLETED"/>
             </intent-filter>
         </receiver>
+
+        <receiver android:name=".RestartPriceAlertService" >
+            <intent-filter>
+                <action android:name="KillPriceAlertService" >
+                </action>
+            </intent-filter>
+        </receiver>
+
     </application>
 
 </manifest>

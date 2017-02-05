@@ -36,6 +36,12 @@ import altcoin.br.vcash.utils.Utils;
 public class PriceAlertService extends Service {
     private Timer timer = new Timer();
 
+    @Override
+    public void onDestroy() {
+        super.onDestroy();
+        sendBroadcast(new Intent("KillPriceAlertService"));
+    }
+
     public IBinder onBind(Intent arg0) {
         return null;
     }
@@ -48,9 +54,9 @@ public class PriceAlertService extends Service {
         // if (minutes < 1) minutes = 1;
         // if (minutes >= 9999) minutes = 9999;
 
-        // timer.scheduleAtFixedRate(new mainTask(), 0, minutes * 60 * 1000);
+        timer.scheduleAtFixedRate(new mainTask(), 0, minutes * 60 * 1000);
 
-        timer.scheduleAtFixedRate(new mainTask(), 0, 20 * 1000); // 20 segundos (para testes)
+        // timer.scheduleAtFixedRate(new mainTask(), 0, 20 * 1000); // 20 segundos (para testes)
     }
 
     private class mainTask extends TimerTask {

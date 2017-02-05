@@ -41,9 +41,6 @@
             android:label="@string/title_activity_wallets" />
 
         <service
-            android:name="altcoin.br.vcash.services.NotificationCoinService"
-            android:enabled="true" />
-        <service
             android:name="altcoin.br.vcash.services.BalanceChangesService"
             android:enabled="true" />
         <service
@@ -71,6 +68,22 @@
         <activity
             android:name="altcoin.br.vcash.AlertActivity"
             android:label="@string/title_activity_alerts" />
+
+        <receiver
+            android:name="altcoin.br.vcash.ReceiverOnBootComplete"
+            android:enabled="true"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="altcoin.br.vcash.RestartPriceAlertService" >
+            <intent-filter>
+                <action android:name="KillPriceAlertService" >
+                </action>
+            </intent-filter>
+        </receiver>
+
         <activity
             android:name="com.google.android.gms.common.api.GoogleApiActivity"
             android:exported="false"
