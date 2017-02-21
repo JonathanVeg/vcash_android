@@ -96,6 +96,10 @@
         "source": "/home/jonathan/Desktop/vcash_android/app/src/main/res/layout/activity_alert.xml"
     },
     {
+        "merged": "/home/jonathan/Desktop/vcash_android/app/build/intermediates/res/merged/release/layout/activity_configure_widget.xml",
+        "source": "/home/jonathan/Desktop/vcash_android/app/src/main/res/layout/activity_configure_widget.xml"
+    },
+    {
         "merged": "/home/jonathan/Desktop/vcash_android/app/build/intermediates/res/merged/release/layout/row_links.xml",
         "source": "/home/jonathan/Desktop/vcash_android/app/src/main/res/layout/row_links.xml"
     },

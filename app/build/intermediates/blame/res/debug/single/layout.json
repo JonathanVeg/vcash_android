@@ -80,6 +80,10 @@
         "source": "/home/jonathan/Desktop/vcash_android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/layout/notification_template_big_media_narrow.xml"
     },
     {
+        "merged": "/home/jonathan/Desktop/vcash_android/app/build/intermediates/res/merged/debug/layout/activity_configure_widget.xml",
+        "source": "/home/jonathan/Desktop/vcash_android/app/src/main/res/layout/activity_configure_widget.xml"
+    },
+    {
         "merged": "/home/jonathan/Desktop/vcash_android/app/build/intermediates/res/merged/debug/layout/abc_list_menu_item_radio.xml",
         "source": "/home/jonathan/Desktop/vcash_android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/layout/abc_list_menu_item_radio.xml"
     },

@@ -6,7 +6,7 @@ import android.database.sqlite.SQLiteOpenHelper;
 
 class CreateDatabase extends SQLiteOpenHelper {
 
-    private static int CURRENT_DB_VERSION = 4;
+    private static int CURRENT_DB_VERSION = 6;
 
     CreateDatabase(Context context, String dbName) {
         super(context, dbName, null, CURRENT_DB_VERSION);
@@ -63,6 +63,19 @@ class CreateDatabase extends SQLiteOpenHelper {
                             "poloniex boolean," +
                             "bittrex boolean" +
                             ")");
+                } catch (Exception ignored) {
+                }
+
+                break;
+
+            case 6:
+                try {
+                    db.execSQL("CREATE TABLE if not exists coin_widgets(_id integer primary key autoincrement, " +
+                            "widget_id integer," +
+                            "exchange varchar(30)" +
+                            ")");
+
+                    db.execSQL("ALTER TABLE coin_widgets ADD COLUMN fiat varchar(5)");
                 } catch (Exception ignored) {
                 }
 
